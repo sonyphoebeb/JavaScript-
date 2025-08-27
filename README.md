@@ -76,3 +76,64 @@ Today I practiced different ways to display output in JavaScript and implemented
            * Keep JS code structured by using external .js files.
 
 Tomorrow, I will continue with JavaScript Data Types and Operators in detail.  
+
+📅 Date: 27-08-2025  
+# Day 12 – JavaScript Basics
+Today I practiced **JavaScript Increment/Decrement** and **HTML Events** with external JS functions.  
+
+✅ What I Learned
+How to use HTML events to make a webpage interactive.
+Linking external JavaScript file (events.js) with HTML.
+Handling mouse, keyboard, form, and window events.
+Using DOM methods like getElementById() to dynamically update content.
+
+📝 Events Implemented
+🔘 Mouse Events
+onclick → Show current date & time.
+ondblclick → Show my name on double-click.
+onmouseover & onmouseout → Trigger alert or change text when hovering in/out.
+
+⌨️ Keyboard Events
+onkeydown & onkeyup → Display which key was pressed/released using event.key.
+
+📌 Form & Input Events
+onchange → Detect selected option from dropdown.
+onfocus & onblur → Highlight input field when active/inactive.
+oninput → Show live typed text instantly.
+onsubmit → Show alert on form submission and prevent page reload with return false;.
+
+🌍 Window Events
+window.onload → Executes when the page finishes loading.
+window.onresize → Logs a message whenever browser window is resized.
+
+🚀 Key Takeaways
+Events connect user actions to JavaScript logic.
+Inline event attributes (onclick="...") can be separated into external JS for cleaner code.
+event.key captures the exact key pressed.
+return false; in onsubmit stops default form submission behavior (page reload).
+Window events allow responding to page load and resize actions.
+
+👉 This project is a hands-on reference for commonly used HTML + JS events.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
