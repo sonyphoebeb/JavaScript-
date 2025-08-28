@@ -115,8 +115,73 @@ Window events allow responding to page load and resize actions.
 
 👉 This project is a hands-on reference for commonly used HTML + JS events.
 
+📅 Date: 28-08-2025  
+# Day 13 – JavaScript Basics
 
+📘 JavaScript Practice – Day Summary
+Today, I practiced the following important JavaScript concepts with examples:
 
+🔹 1. Functions
+Writing simple functions for increment & decrement numbers.
+Practiced comparison operator functions using if...else.
+Handling user input and displaying results.
+
+🔹 2. Objects
+Learned 3 ways to create objects:
+
+Object Literal
+let phone = {
+    brand: "Apple",
+    model: "iPhone 15",
+    price: 120000
+};
+
+Using new Object()
+let student = new Object();
+student.name = "John";
+student.course = "JavaScript";
+student.level = "Beginner";
+
+Empty Object + Properties Added Later
+let car = {};
+car.brand = "Tesla";
+car.model = "Model S";
+car.price = 8000000;
+
+Also created buttons to print object details like:
+👉 “The brand name is Apple and model iPhone 15 priced at 120000”
+
+🔹 3. Strings
+Creating strings using quotes and template literals.
+Practiced escape characters:
+let text = "We are the so-called \"Vikings\" from the north.";
+Checked string length using .length.
+Learned Strings as Objects (new String()).
+
+🔹 4. Template Literals & Interpolation
+Used backticks (``) for string interpolation:
+let name = "Sony";
+let age = 21;
+let result = `My name is ${name} and I am ${age} years old.`;
+
+🔹 5. Comparison Operators
+Practiced with separate buttons & functions:
+==
+===
+!=
+!==
+>
+<
+>=
+<=
+Each operator checked with if...else and returned "true" or "false".
+
+🔹 6. Assignment Operators
+Learned logical assignment like:
+let x = 1;
+x &&= 10; // x becomes 10 if x is truthy
+
+✅ Summary: Today’s practice included Functions, Objects, Strings, Escape Characters, Template Literals, Interpolation, Comparison Operators, and Assignment Operators.
 
 
 
