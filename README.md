@@ -183,8 +183,48 @@ x &&= 10; // x becomes 10 if x is truthy
 
 ✅ Summary: Today’s practice included Functions, Objects, Strings, Escape Characters, Template Literals, Interpolation, Comparison Operators, and Assignment Operators.
 
+📅 Date: 29-08-2025  
+# Day 14 – JavaScript Basics
+📘 Today’s Practice – JavaScript Numbers & Array
+
+🔢 JavaScript Numbers
+Numbers can be written with or without decimals.
+Special values: Infinity, -Infinity, NaN.
+
+Useful methods:
+.toString() → converts number to string
+.toFixed(n) → rounds to n decimals
+.toExponential(n) → exponential notation
+Number(), parseInt(), parseFloat() → conversions
+✅ Examples:
+let marks = 95;  
+let pi = 3.14159;  
+console.log(marks.toString());   // "95"  
+console.log(pi.toFixed(2));      // 3.14  
+console.log((100 / "abc"));      // NaN  
+
+📚 JavaScript Arrays
+Arrays hold multiple values in one variable.
+Declared using [] or new Array().
+Indexed (0-based).
+Dynamic – can grow/shrink.
+
+💻 Tech Stack Example:
+let techStack = ["HTML", "CSS", "JavaScript", "React"];
+console.log(techStack.join(" | "));     // HTML | CSS | JavaScript | React
+
+techStack.unshift("Git");               // Add at start
+techStack.pop();                        // Remove last
+console.log(techStack);                 // ["Git","HTML","CSS","JavaScript"]
+
+techStack.forEach(function(tech) {
+  console.log("I am learning " + tech);
+});
 
 
+✅ Summary:
+Practiced Numbers: conversion, formatting, and special values.
+Practiced Arrays: creation, accessing, adding/removing elements, looping with forEach().
 
 
 
