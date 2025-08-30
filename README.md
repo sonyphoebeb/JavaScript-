@@ -234,6 +234,7 @@ Practiced Arrays: creation, accessing, adding/removing elements, looping with fo
 🔹 1. Logical Operators in JavaScript
 
 Operator	Description	Example	Output
+
 && (AND)	Returns true if both are true	true && false	false
 || (OR)	Returns true if one is true	true || false	true
 ?? (Nullish Coalescing)	Returns right-hand value if left is null or undefined	null ?? "Hello"	"Hello"
@@ -244,6 +245,7 @@ Operator	Description	Example	Output
 🔹 2. String Methods
 
 Method	Example	Output
+
 .length	"JavaScript".length	10
 .toUpperCase()	"hello".toUpperCase()	"HELLO"
 .toLowerCase()	"HELLO".toLowerCase()	"hello"
@@ -257,6 +259,7 @@ Method	Example	Output
 🔹 3. Math Functions
 
 Function	Example	Output
+
 Math.round(x)	Math.round(4.6)	5
 Math.floor(x)	Math.floor(4.9)	4
 Math.ceil(x)	Math.ceil(4.1)	5
@@ -271,7 +274,9 @@ Math.abs(x)	Math.abs(-7)	7
 ✅ This covers your today’s practice:
 
 Logical Operators (&&, ||, ??, &&=, ||=, ??=)
+
 String Methods (common ones like concat, trim, replace, padStart, padEnd, etc.)
+
 Math Functions (rounding, powers, roots, random, etc.)
 
 
