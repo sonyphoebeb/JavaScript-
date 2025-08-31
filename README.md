@@ -279,6 +279,9 @@ String Methods (common ones like concat, trim, replace, padStart, padEnd, etc.)
 
 Math Functions (rounding, powers, roots, random, etc.)
 
+📅 Date: 31-08-2025  
+# Day 15 – JavaScript Basics
+
 
 
 
