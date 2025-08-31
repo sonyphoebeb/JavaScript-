@@ -282,14 +282,13 @@ Math Functions (rounding, powers, roots, random, etc.)
 📅 Date: 31-08-2025  
 # Day 15 – JavaScript Basics
 
-🔹 3. Date in JavaScript
+🔹 Date in JavaScript
 let today = new Date();
 console.log(today); 
 
-
 📌 Prints the current date & time.
 
-🔹 4. Math in JavaScript
+🔹 . Math in JavaScript
 📍 Math Constants
 
 Math.E → Euler’s number ≈ 2.718
@@ -315,7 +314,9 @@ Math.max(...nums)	Math.max(3,7,2)	7
 Math.min(...nums)	Math.min(3,7,2)	2
 Math.random()	Math.random()	Random 0–1
 Math.log(x)	Math.log(Math.E)	1
-🔹 5. Loops in JS
+
+🔹 Loops in JS
+
 // For loop
 for (let i=1; i<=3; i++) {
   console.log("Count: " + i);
@@ -328,7 +329,8 @@ while (j<=3) {
   j++;
 }
 
-🔹 6. Error Handling
+🔹 Error Handling
+
 try {
   let num = 10/0;
   console.log(num);
@@ -341,10 +343,6 @@ try {
 
 
 ✅ Summary of Today’s Practice
-
-Logical Operators (&&, ||, ??, &&=, ||=, ??=)
-
-String Methods (length, search, replace, slice, etc.)
 
 Date handling
 
