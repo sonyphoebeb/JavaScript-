@@ -403,172 +403,173 @@ A paragraph (indexResult) to display the output
 
 🔑 Things I learned here: 
 
-defer makes sure the JS file loads after the HTML is ready. 
+defer makes sure the JS file loads after the HTML is ready.   
 
-Dropdowns (<select>) and buttons (<button>) can directly call JavaScript functions with onchange or onclick. 
+Dropdowns (<select>) and buttons (<button>) can directly call JavaScript functions with onchange or onclick.   
 
-disabled attribute keeps the button inactive until I enable it from JS. 
+disabled attribute keeps the button inactive until I enable it from JS.   
 
-2. jsSplitFunction.js 
+2. jsSplitFunction.js   
 
-This file contains all my logic. 
+This file contains all my logic.   
 
-let patients = []; // array of patients 
-let selectedPatient = []; // array of selected patient 
+let patients = []; // array of patients   
+let selectedPatient = []; // array of selected patient   
 
-// Static patients input  
-let inputPatientsData =  
-"1:2:2:3:4:4:5;2:33:3:2:4:2:2;12:3:23:1:3:1:3;32:3:2:3:1:3:1;1:33:1:3:2:42:2;32:3:11:33:11:33:11;34:1:31:1:3:1:1;12:2:2:2:2:3:2"; 
+// Static patients input    
+let inputPatientsData =    
+"1:2:2:3:4:4:5;2:33:3:2:4:2:2;12:3:23:1:3:1:3;32:3:2:3:1:3:1;1:33:1:3:2:42:2;32:3:11:33:11:33:11;34:1:31:1:3:1:1;12:2:2:2:2:3:2";   
+ 
+💡 Here, I stored patient data as one long string.    
 
-💡 Here, I stored patient data as one long string. 
+Each patient’s data is separated by (;)     
 
-Each patient’s data is separated by (;)  
+Inside each patient, values are separated by (:)     
 
-Inside each patient, values are separated by (:)  
+Loading data into dropdown     
 
-Loading data into dropdown  
+window.onload = function () {       
+  patients = inputPatientsData.split(";").map(patientsData => patientsData.split(":"));      
 
-window.onload = function () {   
-  patients = inputPatientsData.split(";").map(patientsData => patientsData.split(":"));  
+  let dropdown = document.getElementById("patientDropdown");     
+  dropdown.innerHTML = '<option value="" disabled selected>Select Patient</option>';     
 
-  let dropdown = document.getElementById("patientDropdown");  
-  dropdown.innerHTML = '<option value="" disabled selected>Select Patient</option>'; 
+  for (let i = 0; i < patients.length; i++) {     
+    let option = document.createElement("option");      
+    option.value = i;        
+    option.text = "patient" + (i + 1);            
+    dropdown.appendChild(option);          
+  }          
+};             
 
-  for (let i = 0; i < patients.length; i++) { 
-    let option = document.createElement("option"); 
-    option.value = i; 
-    option.text = "patient" + (i + 1); 
-    dropdown.appendChild(option); 
-  } 
-}; 
 
+ 🔍 Step by step:          
 
- 🔍 Step by step: 
+inputPatientsData.split(";") → breaks the big string into multiple patients.               
 
-inputPatientsData.split(";") → breaks the big string into multiple patients. 
+.map(patientsData => patientsData.split(":")) → splits each patient’s data by : into an array.              
 
-.map(patientsData => patientsData.split(":")) → splits each patient’s data by : into an array. 
+Example: "1:2:3;4:5:6" → [["1","2","3"], ["4","5","6"]]                
 
-Example: "1:2:3;4:5:6" → [["1","2","3"], ["4","5","6"]] 
+Loop (for) adds options like patient1, patient2, etc. into the dropdown.               
 
-Loop (for) adds options like patient1, patient2, etc. into the dropdown. 
+First option is always "Select Patient" (disabled + selected by default).             
 
-First option is always "Select Patient" (disabled + selected by default). 
+Handling patient selection              
+function showPatientData() {               
+  let index = document.getElementById("patientDropdown").value;                  
+  if (index === "") return;             
+ 
+  selectedPatient = patients[index];              
+  document.getElementById("indexResult").textContent = "";                
 
-Handling patient selection 
-function showPatientData() { 
-  let index = document.getElementById("patientDropdown").value; 
-  if (index === "") return; 
+  let indexDropdown = document.getElementById("indexDropdown");                
+  indexDropdown.innerHTML = '<option value="" disabled selected>Select Index</option>';                 
 
-  selectedPatient = patients[index]; 
-  document.getElementById("indexResult").textContent = ""; 
+  for (let i = 0; i < selectedPatient.length; i++) {               
+    let option = document.createElement("option");              
+    option.value = i;              
+    option.text = i;                 
+    indexDropdown.appendChild(option);                    
+  }                       
 
-  let indexDropdown = document.getElementById("indexDropdown"); 
-  indexDropdown.innerHTML = '<option value="" disabled selected>Select Index</option>'; 
+  document.getElementById("getValueBtn").disabled = true;                         
 
-  for (let i = 0; i < selectedPatient.length; i++) { 
-    let option = document.createElement("option"); 
-    option.value = i; 
-    option.text = i; 
-    indexDropdown.appendChild(option); 
-  } 
+  indexDropdown.onchange = function () {               
+    document.getElementById("getValueBtn").disabled = false;                
+  };                   
+}              
+           
 
-  document.getElementById("getValueBtn").disabled = true; 
+🔍 Step by step:              
 
-  indexDropdown.onchange = function () { 
-    document.getElementById("getValueBtn").disabled = false; 
-  }; 
-} 
+Get which patient was selected (index).                     
 
+If nothing is selected → exit.              
 
-🔍 Step by step: 
+Store that patient’s data in selectedPatient.                 
 
-Get which patient was selected (index). 
+Reset the index dropdown and add indexes 0, 1, 2… for that patient.                         
 
-If nothing is selected → exit. 
+Disable the button until the user actually selects an index.                      
 
-Store that patient’s data in selectedPatient. 
+Showing the selected value                   
+function showIndexValue() {                                
+  let idx = document.getElementById("indexDropdown").value;                            
+  let patientIndex = document.getElementById("patientDropdown").value;                               
+  if (idx === "") {                                         
+    document.getElementById("indexResult").textContent = "Please select an index!";                                    
+    return;                  
+  }                   
+  document.getElementById("indexResult").textContent =                             
+    `Value at index ${idx} of patient${parseInt(patientIndex) + 1} is ${selectedPatient[idx]}`;                                 
+}                    
 
-Reset the index dropdown and add indexes 0, 1, 2… for that patient. 
 
-Disable the button until the user actually selects an index. 
+🔍 Step by step:                        
 
-Showing the selected value 
-function showIndexValue() { 
-  let idx = document.getElementById("indexDropdown").value; 
-  let patientIndex = document.getElementById("patientDropdown").value; 
-  if (idx === "") { 
-    document.getElementById("indexResult").textContent = "Please select an index!"; 
-    return; 
-  } 
-  document.getElementById("indexResult").textContent = 
-    `Value at index ${idx} of patient${parseInt(patientIndex) + 1} is ${selectedPatient[idx]}`; 
-} 
+Get the index from indexDropdown.             
 
+Get the patient number from patientDropdown.              
 
-# 🔍 Step by step:
+If no index is chosen, show a warning.               
 
-Get the index from indexDropdown.
+Otherwise → display the value with a template string.                  
 
-Get the patient number from patientDropdown.
+ 
+ 📌 Example:          
 
-If no index is chosen, show a warning.
+Select patient3             
 
-Otherwise → display the value with a template string.
+Select index 2               
 
-# 📌 Example:
+Output → Value at index 2 of patient3 is 23             
 
-Select patient3
+🔑 Key Learnings      
 
-Select index 2
+JavaScript split()          
 
-Output → Value at index 2 of patient3 is 23
+Learned how to split strings into arrays.            
 
-# 🔑 Key Learnings
+Nested split for multi-level data (; for patients, : for values).        
 
-JavaScript split()
+Arrays and Indexing          
 
-Learned how to split strings into arrays.
+Arrays start from 0 in JavaScript.         
 
-Nested split for multi-level data (; for patients, : for values).
+Used indexing to fetch patient values.           
 
-Arrays and Indexing
+DOM Manipulation                
 
-Arrays start from 0 in JavaScript.
+document.createElement() to build dropdowns.                
+ 
+appendChild() to add them into HTML.                   
 
-Used indexing to fetch patient values.
+Changing inner content with .textContent and .innerHTML.              
 
-DOM Manipulation
+Event Handling            
 
-document.createElement() to build dropdowns.
+onchange → runs when dropdown changes.                
 
-appendChild() to add them into HTML.
+onclick → runs when button is clicked.                   
 
-Changing inner content with .textContent and .innerHTML.
+Dynamically enabling/disabling buttons.                
 
-Event Handling
+Template Literals               
+ 
+Used backticks (``) with ${} placeholders for clear outputs.                
 
-onchange → runs when dropdown changes.
+# 📝 Notes to Self          
+ 
+Always reset dropdowns when a new selection is made.             
 
-onclick → runs when button is clicked.
+Remember to handle empty selections properly (avoid showing 0 by default).               
 
-Dynamically enabling/disabling buttons.
+Using disabled selected in <option> helps create a placeholder.                
 
-Template Literals
-
-Used backticks (``) with ${} placeholders for clear outputs.
-
-# 📝 Notes to Self
-
-Always reset dropdowns when a new selection is made.
-
-Remember to handle empty selections properly (avoid showing 0 by default).
-
-Using disabled selected in <option> helps create a placeholder.
-
-This exercise improved my understanding of arrays, dropdowns, and event handling in JS.
-
-👉 This was not a project, but a practice exercise where I learned how to connect HTML and JavaScript using a real example (patients and indexes).
+This exercise improved my understanding of arrays, dropdowns, and event handling in JS.              
+ 
+👉 This was not a project, but a practice exercise where I learned how to connect HTML and JavaScript using a real example (patients and indexes).            
 
 
 
