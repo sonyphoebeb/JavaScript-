@@ -381,129 +381,129 @@ A button to get the value
 A paragraph (indexResult) to display the output  
 
 <!DOCTYPE html> 
-<html>
-<head>
-  <title>JavaScript Split Function</title>
-  <script src="jsSplitFunction.js" defer></script>
-</head>
-<body>
-  <h2>JavaScript Split Function</h2>
+<html> 
+<head> 
+  <title>JavaScript Split Function</title> 
+  <script src="jsSplitFunction.js" defer></script> 
+</head> 
+<body> 
+  <h2>JavaScript Split Function</h2> 
 
-  <!-- Patient dropdown -->
-  <select id="patientDropdown" onchange="showPatientData()"></select>
-  <br><br>
+  <!-- Patient dropdown --> 
+  <select id="patientDropdown" onchange="showPatientData()"></select> 
+  <br><br> 
 
-  <!-- Index dropdown -->
-  <select id="indexDropdown"></select>
-  <button id="getValueBtn" onclick="showIndexValue()" disabled>Get Value</button>
-  <p id="indexResult"></p>
-</body>
-</html>
-
-
-# 🔑 Things I learned here:
-
-defer makes sure the JS file loads after the HTML is ready.
-
-Dropdowns (<select>) and buttons (<button>) can directly call JavaScript functions with onchange or onclick.
-
-disabled attribute keeps the button inactive until I enable it from JS.
-
-2. jsSplitFunction.js
-
-This file contains all my logic.
-
-let patients = []; // array of patients
-let selectedPatient = []; // array of selected patient
-
-// Static patients input 
-let inputPatientsData = 
-"1:2:2:3:4:4:5;2:33:3:2:4:2:2;12:3:23:1:3:1:3;32:3:2:3:1:3:1;1:33:1:3:2:42:2;32:3:11:33:11:33:11;34:1:31:1:3:1:1;12:2:2:2:2:3:2";
-
-# 💡 Here, I stored patient data as one long string.
-
-Each patient’s data is separated by ;.
-
-Inside each patient, values are separated by :.
-
-# Loading data into dropdown
-
-window.onload = function () {  
-  patients = inputPatientsData.split(";").map(patientsData => patientsData.split(":"));
-
-  let dropdown = document.getElementById("patientDropdown");
-  dropdown.innerHTML = '<option value="" disabled selected>Select Patient</option>';
-
-  for (let i = 0; i < patients.length; i++) {
-    let option = document.createElement("option");
-    option.value = i;
-    option.text = "patient" + (i + 1);
-    dropdown.appendChild(option);
-  }
-};
+  <!-- Index dropdown --> 
+  <select id="indexDropdown"></select> 
+  <button id="getValueBtn" onclick="showIndexValue()" disabled>Get Value</button> 
+  <p id="indexResult"></p> 
+</body> 
+</html> 
 
 
-# 🔍 Step by step:
+🔑 Things I learned here: 
 
-inputPatientsData.split(";") → breaks the big string into multiple patients.
+defer makes sure the JS file loads after the HTML is ready. 
 
-.map(patientsData => patientsData.split(":")) → splits each patient’s data by : into an array.
+Dropdowns (<select>) and buttons (<button>) can directly call JavaScript functions with onchange or onclick. 
 
-Example: "1:2:3;4:5:6" → [["1","2","3"], ["4","5","6"]]
+disabled attribute keeps the button inactive until I enable it from JS. 
 
-Loop (for) adds options like patient1, patient2, etc. into the dropdown.
+2. jsSplitFunction.js 
 
-First option is always "Select Patient" (disabled + selected by default).
+This file contains all my logic. 
 
-Handling patient selection
-function showPatientData() {
-  let index = document.getElementById("patientDropdown").value;
-  if (index === "") return;
+let patients = []; // array of patients 
+let selectedPatient = []; // array of selected patient 
 
-  selectedPatient = patients[index];
-  document.getElementById("indexResult").textContent = "";
+// Static patients input  
+let inputPatientsData =  
+"1:2:2:3:4:4:5;2:33:3:2:4:2:2;12:3:23:1:3:1:3;32:3:2:3:1:3:1;1:33:1:3:2:42:2;32:3:11:33:11:33:11;34:1:31:1:3:1:1;12:2:2:2:2:3:2"; 
 
-  let indexDropdown = document.getElementById("indexDropdown");
-  indexDropdown.innerHTML = '<option value="" disabled selected>Select Index</option>';
+💡 Here, I stored patient data as one long string. 
 
-  for (let i = 0; i < selectedPatient.length; i++) {
-    let option = document.createElement("option");
-    option.value = i;
-    option.text = i;
-    indexDropdown.appendChild(option);
-  }
+Each patient’s data is separated by (;)  
 
-  document.getElementById("getValueBtn").disabled = true;
+Inside each patient, values are separated by (:)  
 
-  indexDropdown.onchange = function () {
-    document.getElementById("getValueBtn").disabled = false;
-  };
-}
+Loading data into dropdown  
+
+window.onload = function () {   
+  patients = inputPatientsData.split(";").map(patientsData => patientsData.split(":"));  
+
+  let dropdown = document.getElementById("patientDropdown");  
+  dropdown.innerHTML = '<option value="" disabled selected>Select Patient</option>'; 
+
+  for (let i = 0; i < patients.length; i++) { 
+    let option = document.createElement("option"); 
+    option.value = i; 
+    option.text = "patient" + (i + 1); 
+    dropdown.appendChild(option); 
+  } 
+}; 
 
 
-# 🔍 Step by step:
+ 🔍 Step by step: 
 
-Get which patient was selected (index).
+inputPatientsData.split(";") → breaks the big string into multiple patients. 
 
-If nothing is selected → exit.
+.map(patientsData => patientsData.split(":")) → splits each patient’s data by : into an array. 
 
-Store that patient’s data in selectedPatient.
+Example: "1:2:3;4:5:6" → [["1","2","3"], ["4","5","6"]] 
 
-Reset the index dropdown and add indexes 0, 1, 2… for that patient.
+Loop (for) adds options like patient1, patient2, etc. into the dropdown. 
 
-Disable the button until the user actually selects an index.
+First option is always "Select Patient" (disabled + selected by default). 
 
-Showing the selected value
-function showIndexValue() {
-  let idx = document.getElementById("indexDropdown").value;
-  let patientIndex = document.getElementById("patientDropdown").value;
-  if (idx === "") {
-    document.getElementById("indexResult").textContent = "Please select an index!";
-    return;
-  }
-  document.getElementById("indexResult").textContent =
-    `Value at index ${idx} of patient${parseInt(patientIndex) + 1} is ${selectedPatient[idx]}`;
-}
+Handling patient selection 
+function showPatientData() { 
+  let index = document.getElementById("patientDropdown").value; 
+  if (index === "") return; 
+
+  selectedPatient = patients[index]; 
+  document.getElementById("indexResult").textContent = ""; 
+
+  let indexDropdown = document.getElementById("indexDropdown"); 
+  indexDropdown.innerHTML = '<option value="" disabled selected>Select Index</option>'; 
+
+  for (let i = 0; i < selectedPatient.length; i++) { 
+    let option = document.createElement("option"); 
+    option.value = i; 
+    option.text = i; 
+    indexDropdown.appendChild(option); 
+  } 
+
+  document.getElementById("getValueBtn").disabled = true; 
+
+  indexDropdown.onchange = function () { 
+    document.getElementById("getValueBtn").disabled = false; 
+  }; 
+} 
+
+
+🔍 Step by step: 
+
+Get which patient was selected (index). 
+
+If nothing is selected → exit. 
+
+Store that patient’s data in selectedPatient. 
+
+Reset the index dropdown and add indexes 0, 1, 2… for that patient. 
+
+Disable the button until the user actually selects an index. 
+
+Showing the selected value 
+function showIndexValue() { 
+  let idx = document.getElementById("indexDropdown").value; 
+  let patientIndex = document.getElementById("patientDropdown").value; 
+  if (idx === "") { 
+    document.getElementById("indexResult").textContent = "Please select an index!"; 
+    return; 
+  } 
+  document.getElementById("indexResult").textContent = 
+    `Value at index ${idx} of patient${parseInt(patientIndex) + 1} is ${selectedPatient[idx]}`; 
+} 
 
 
 # 🔍 Step by step:
