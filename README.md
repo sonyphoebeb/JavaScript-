@@ -355,29 +355,32 @@ Error Handling (try...catch...finally)
 📅 Date: 01-09-2025  
 # Day 16 – JavaScript Basics
 
-Learned JavaScript Split Function with Dropdowns
+Learned JavaScript Split Function with Dropdowns 
 
-This exercise was a practice assignment where I explored how to use JavaScript’s split() function, handle arrays, and dynamically update HTML elements using JavaScript.
+This exercise was a practice assignment where I explored how to use JavaScript’s split() function, handle arrays, and dynamically update HTML elements using JavaScript.   
+
+
 I worked with two files:
 
-jsSplitFunction.html → my HTML structure (dropdowns, button, and output area).
+jsSplitFunction.html → my HTML structure (dropdowns, button, and output area). 
 
-jsSplitFunction.js → my JavaScript logic (splitting strings, populating dropdowns, handling button clicks).
+jsSplitFunction.js → my JavaScript logic (splitting strings, populating dropdowns, handling button clicks). 
 
-# 📂 Files Overview
-1. jsSplitFunction.html
+ 
+📂 Files Overview  
+1. jsSplitFunction.html  
 
-This file contains:
+This file contains:  
 
-A dropdown for patients (patientDropdown)
+A dropdown for patients (patientDropdown)  
 
-A dropdown for indexes (indexDropdown)
+A dropdown for indexes (indexDropdown)  
 
-A button to get the value
+A button to get the value  
 
-A paragraph (indexResult) to display the output
+A paragraph (indexResult) to display the output  
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
   <title>JavaScript Split Function</title>
