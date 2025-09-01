@@ -364,7 +364,7 @@ jsSplitFunction.html → my HTML structure (dropdowns, button, and output area).
 
 jsSplitFunction.js → my JavaScript logic (splitting strings, populating dropdowns, handling button clicks).
 
-📂 Files Overview
+# 📂 Files Overview
 1. jsSplitFunction.html
 
 This file contains:
@@ -398,7 +398,7 @@ A paragraph (indexResult) to display the output
 </html>
 
 
-🔑 Things I learned here:
+# 🔑 Things I learned here:
 
 defer makes sure the JS file loads after the HTML is ready.
 
@@ -417,7 +417,7 @@ let selectedPatient = []; // array of selected patient
 let inputPatientsData = 
 "1:2:2:3:4:4:5;2:33:3:2:4:2:2;12:3:23:1:3:1:3;32:3:2:3:1:3:1;1:33:1:3:2:42:2;32:3:11:33:11:33:11;34:1:31:1:3:1:1;12:2:2:2:2:3:2";
 
-💡 Here, I stored patient data as one long string.
+# 💡 Here, I stored patient data as one long string.
 
 Each patient’s data is separated by ;.
 
@@ -440,7 +440,7 @@ window.onload = function () {
 };
 
 
-🔍 Step by step:
+# 🔍 Step by step:
 
 inputPatientsData.split(";") → breaks the big string into multiple patients.
 
@@ -478,7 +478,7 @@ function showPatientData() {
 }
 
 
-🔍 Step by step:
+# 🔍 Step by step:
 
 Get which patient was selected (index).
 
@@ -503,7 +503,7 @@ function showIndexValue() {
 }
 
 
-🔍 Step by step:
+# 🔍 Step by step:
 
 Get the index from indexDropdown.
 
@@ -513,7 +513,7 @@ If no index is chosen, show a warning.
 
 Otherwise → display the value with a template string.
 
-📌 Example:
+# 📌 Example:
 
 Select patient3
 
@@ -521,7 +521,7 @@ Select index 2
 
 Output → Value at index 2 of patient3 is 23
 
-🔑 Key Learnings
+# 🔑 Key Learnings
 
 JavaScript split()
 
@@ -555,7 +555,7 @@ Template Literals
 
 Used backticks (``) with ${} placeholders for clear outputs.
 
-📝 Notes to Self
+# 📝 Notes to Self
 
 Always reset dropdowns when a new selection is made.
 
