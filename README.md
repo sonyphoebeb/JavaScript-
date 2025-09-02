@@ -571,6 +571,30 @@ This exercise improved my understanding of arrays, dropdowns, and event handling
  
 👉 This was not a project, but a practice exercise where I learned how to connect HTML and JavaScript using a real example (patients and indexes).            
 
+📅 Date: 02-09-2025  
+# Day 17 – JavaScript Basics
+# JavaScript String Methods & Weekday Practice
+
+This project is a practice exercise covering different JavaScript string methods and a weekday converter.
+
+# String Methods Practiced
+1. String.raw → Display raw strings without interpreting escape characters
+2. String.fromCodePoint → Convert Unicode values to characters or emojis
+3. escape / unescape → Encode and decode strings
+4. eval → Evaluate JavaScript expressions from strings
+5. Template Literals → Use backticks for string interpolation
+6. Multi-line Strings → Write strings spanning multiple lines
+7. new String() → Create string objects
+8. Variations:
+    -> Nested new String usage with transformations (uppercase, lowercase)
+    -> Template + Literal combinations
+    -> Escape + Unescape with custom messages
+    -> Eval with error handling  
+
+# Weekday Converter
+- Input: Date from <input type="date"> 
+- Output: Weekday (SUN, MON, TUE, WED, THU, FRI, SAT)  
+- Implemented using Date.getDay() and a switch case
 
 
 
