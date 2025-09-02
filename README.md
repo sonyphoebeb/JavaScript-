@@ -571,8 +571,11 @@ This exercise improved my understanding of arrays, dropdowns, and event handling
  
 👉 This was not a project, but a practice exercise where I learned how to connect HTML and JavaScript using a real example (patients and indexes).            
 
+
+
 📅 Date: 02-09-2025  
-# Day 17 – JavaScript Basics
+# Day 17 – JavaScript Basics     
+
 # JavaScript String Methods & Weekday Practice
 
 This project is a practice exercise covering different JavaScript string methods and a weekday converter.
