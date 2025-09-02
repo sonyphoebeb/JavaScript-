@@ -569,11 +569,11 @@ Using disabled selected in <option> helps create a placeholder.
 
 This exercise improved my understanding of arrays, dropdowns, and event handling in JS.              
  
-👉 This was not a project, but a practice exercise where I learned how to connect HTML and JavaScript using a real example (patients and indexes).            
-
+👉 This was not a project, but a practice exercise where I learned how to connect HTML and JavaScript using a real example (patients and indexes).                      
 
 
 📅 Date: 02-09-2025  
+
 # Day 17 – JavaScript Basics     
 
 # JavaScript String Methods & Weekday Practice
