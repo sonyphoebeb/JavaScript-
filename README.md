@@ -164,8 +164,9 @@ let name = "Sony";
 let age = 21;
 let result = `My name is ${name} and I am ${age} years old.`;
 
-🔹 5. Comparison Operators
+🔹 5. Comparison Operators 
 Practiced with separate buttons & functions:
+
 ==
 ===
 !=
@@ -233,43 +234,43 @@ Practiced Arrays: creation, accessing, adding/removing elements, looping with fo
 
 🔹 1. Logical Operators in JavaScript
 
-Operator	Description	Example	Output
+    Operator	Description	Example	Output
 
-&& (AND)	Returns true if both are true	true && false	false
-|| (OR)	Returns true if one is true	true || false	true
-?? (Nullish Coalescing)	Returns right-hand value if left is null or undefined	null ?? "Hello"	"Hello"
-&&=	Assigns value only if left is truthy	x = 5; x &&= 10; → x=10	10
-||=	Assigns value only if left is falsy	y = 0; y ||= 20; → y=20	20
-??=	Assigns value only if left is null or undefined	z = null; z ??= 30;	30
+     && (AND)	Returns true if both are true	true && false	false
+     || (OR)	Returns true if one is true	true || false	true
+     ?? (Nullish Coalescing)	Returns right-hand value if left is null or undefined	null ?? "Hello"	"Hello"
+     &&=	Assigns value only if left is truthy	x = 5; x &&= 10; → x=10	10
+     ||=	Assigns value only if left is falsy	y = 0; y ||= 20; → y=20	20
+     ??=	Assigns value only if left is null or undefined	z = null; z ??= 30;	30
 
 🔹 2. String Methods
 
-Method	Example	Output
+    Method	Example	Output
 
-.length	"JavaScript".length	10
-.toUpperCase()	"hello".toUpperCase()	"HELLO"
-.toLowerCase()	"HELLO".toLowerCase()	"hello"
-.concat()	"JS".concat(" Rocks")	"JS Rocks"
-.trim()	" spaced ".trim()	"spaced"
-.replace()	"I like Java".replace("Java","JS")	"I like JS"
-.padStart()	"5".padStart(3,"0")	"005"
-.padEnd()	"5".padEnd(3,"0")	"500"
-.includes()	"JavaScript".includes("Script")	true
+        .length	"JavaScript".length	10
+        .toUpperCase()	"hello".toUpperCase()	"HELLO"
+        .toLowerCase()	"HELLO".toLowerCase()	"hello"
+        .concat()	"JS".concat(" Rocks")	"JS Rocks"
+        .trim()	" spaced ".trim()	"spaced"
+        .replace()	"I like Java".replace("Java","JS")	"I like JS"
+        .padStart()	"5".padStart(3,"0")	"005"
+        .padEnd()	"5".padEnd(3,"0")	"500"
+        .includes()	"JavaScript".includes("Script")	true
 
 🔹 3. Math Functions
 
-Function	Example	Output
+    Function	Example	Output
 
-Math.round(x)	Math.round(4.6)	5
-Math.floor(x)	Math.floor(4.9)	4
-Math.ceil(x)	Math.ceil(4.1)	5
-Math.trunc(x)	Math.trunc(4.7)	4
-Math.pow(x,y)	Math.pow(2,3)	8
-Math.sqrt(x)	Math.sqrt(16)	4
-Math.min(...nums)	Math.min(1,5,3)	1
-Math.max(...nums)	Math.max(1,5,3)	5
-Math.random()	Math.random()	Random (0–1)
-Math.abs(x)	Math.abs(-7)	7
+      Math.round(x)	Math.round(4.6)	5
+      Math.floor(x)	Math.floor(4.9)	4
+      Math.ceil(x)	Math.ceil(4.1)	5
+      Math.trunc(x)	Math.trunc(4.7)	4
+      Math.pow(x,y)	Math.pow(2,3)	8
+      Math.sqrt(x)	Math.sqrt(16)	4
+      Math.min(...nums)	Math.min(1,5,3)	1
+      Math.max(...nums)	Math.max(1,5,3)	5
+      Math.random()	Math.random()	Random (0–1)
+      Math.abs(x)	Math.abs(-7)	7
 
 ✅ This covers your today’s practice:
 
