@@ -12,7 +12,7 @@ I learned how to use `document.getElementById` to manipulate HTML elements dynam
 2. JavaScript can change HTML styles (like font size).  
 3. JavaScript can hide HTML content (`display = none`).  
 4. JavaScript can show hidden HTML content (`display = block`).  
-5. Difference between using **single quotes** and **double quotes** in onclick attributes.
+5. Difference between using **single quotes** and **double quotes** in onclick attributes. 
 6. Writing JavaScript inside the `<head>` tag.  
    - Functions defined in head must run after DOM loads (e.g., on button click).  
 7. Writing JavaScript inside the `<body>` tag.  
@@ -599,6 +599,37 @@ This project is a practice exercise covering different JavaScript string methods
 - Implemented using Date.getDay() and a switch case
 
 
+📅 Date: 03-09-2025      
+# Day 18 – JavaScript Basics 
+
+## Date Methods Practice
+
+I explored JavaScript Date object and its methods: 
+
+     1. Creation: new Date(), new Date("2025-09-03"), etc. 
+     2. Get Methods: getFullYear(), getMonth(), getDate(), getDay(), getHours(), getMinutes(), getSeconds(), getMilliseconds(), getTimezoneOffset(). 
+     3. Get UTC Methods: getUTCFullYear(), getUTCMonth(), getUTCDate(), getUTCDay(), getUTCHours(), getUTCMinutes(), getUTCSeconds(), getUTCMilliseconds(). 
+     4. Formatting Methods: toDateString(), toTimeString(), toUTCString(), toISOString(), toLocaleDateString(), toLocaleTimeString(). 
+
+This gave me practice in working with local time, UTC time, and formatting dates. 
+
+## Math Methods (Min & Max)
+
+I practiced working with JavaScript Math functions:  
+
+    1. Math.max() → Finds the largest number from user input (e.g., 5,10,2 → 10).  
+    2. Math.min() → Finds the smallest number from user input (e.g., 5,10,2 → 2).  
+
+Used split(",").map(Number) to accept comma-separated input values and process them dynamically.  
+
+## Prototype & Object.entries() Practice  
+ 
+I created a Student constructor function and practiced:  
+
+    1. Constructor Function → Creates Student objects with name, age, and course.  
+    2. Prototype Method → Added sayHello() using Student.prototype.  
+    3. Object.entries() → Displays all key–value pairs of the student object.  
+    4. Add Extra Property → Demonstrates JavaScript’s flexibility by adding new properties (city) at runtime.   
 
 
 
