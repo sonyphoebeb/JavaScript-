@@ -301,20 +301,22 @@ Math.SQRT2 → Square root of 2 ≈ 1.414
 Math.LN10 → Natural log of 10
 
 📍 Math Functions
-Function	Example	Output
-Math.round(x)	Math.round(4.6)	5
-Math.ceil(x)	Math.ceil(4.1)	5
-Math.floor(x)	Math.floor(4.9)	4
-Math.trunc(x)	Math.trunc(4.7)	4
-Math.sign(x)	Math.sign(-7)	-1
-Math.pow(x,y)	Math.pow(2,3)	8
-Math.sqrt(x)	Math.sqrt(16)	4
-Math.abs(x)	Math.abs(-10)	10
-Math.sin(x)	Math.sin(Math.PI/2)	1
-Math.max(...nums)	Math.max(3,7,2)	7
-Math.min(...nums)	Math.min(3,7,2)	2
-Math.random()	Math.random()	Random 0–1
-Math.log(x)	Math.log(Math.E)	1
+
+    Function	Example	Output
+
+        Math.round(x)	Math.round(4.6)	5
+         Math.ceil(x)	Math.ceil(4.1)	5
+       Math.floor(x)	Math.floor(4.9)	4
+        Math.trunc(x)	Math.trunc(4.7)	4
+        Math.sign(x)	Math.sign(-7)	-1
+        Math.pow(x,y)	Math.pow(2,3)	8
+         Math.sqrt(x)	Math.sqrt(16)	4
+       Math.abs(x)	Math.abs(-10)	10
+        Math.sin(x)	Math.sin(Math.PI/2)	1
+         Math.max(...nums)	Math.max(3,7,2)	7
+         Math.min(...nums)	Math.min(3,7,2)	2
+         Math.random()	Math.random()	Random 0–1
+         Math.log(x)	Math.log(Math.E)	1
 
 🔹 Loops in JS
 
