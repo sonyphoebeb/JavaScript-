@@ -374,11 +374,8 @@ jsSplitFunction.js → my JavaScript logic (splitting strings, populating dropdo
 1. jsSplitFunction.html  
 
 This file contains:  
-
 A dropdown for patients (patientDropdown)  
-
 A dropdown for indexes (indexDropdown)  
-
 A button to get the value  
 
 A paragraph (indexResult) to display the output  
@@ -406,11 +403,11 @@ A paragraph (indexResult) to display the output
 
 🔑 Things I learned here: 
 
-defer makes sure the JS file loads after the HTML is ready.   
+    defer makes sure the JS file loads after the HTML is ready.   
 
-Dropdowns (<select>) and buttons (<button>) can directly call JavaScript functions with onchange or onclick.   
+    Dropdowns (<select>) and buttons (<button>) can directly call JavaScript functions with onchange or onclick.   
 
-disabled attribute keeps the button inactive until I enable it from JS.   
+    disabled attribute keeps the button inactive until I enable it from JS.   
 
 2. jsSplitFunction.js   
 
@@ -424,10 +421,9 @@ This file contains all my logic.
          let inputPatientsData =    
          "1:2:2:3:4:4:5;2:33:3:2:4:2:2;12:3:23:1:3:1:3;32:3:2:3:1:3:1;1:33:1:3:2:42:2;32:3:11:33:11:33:11;34:1:31:1:3:1:1;12:2:2:2:2:3:2";   
  
-💡 Here, I stored patient data as one long string.    
+💡 Here, I stored patient data as one long string.     
 
 Each patient’s data is separated by (;)     
-
 Inside each patient, values are separated by (:)     
 
 Loading data into dropdown     
