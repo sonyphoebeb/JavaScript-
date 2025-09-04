@@ -640,12 +640,13 @@ Each Math function has its own button and separate function implementation in Ja
 
 ## 📂 Features
 
- -> Covers almost all Math methods & constants.
- -> Each method is bound to a button for quick testing.
- -> Accepts user input where required (example: Math.pow(x, y)).
- -> Results are displayed dynamically in the page.
+-> Covers almost all Math methods & constants.
+-> Each method is bound to a button for quick testing.
+-> Accepts user input where required (example: Math.pow(x, y)).
+-> Results are displayed dynamically in the page.
 
-##📘 Methods Covered
+## 📘 Methods Covered
+
 🔹 Value Methods
 
 Math.abs(x) → Absolute value of x
@@ -740,7 +741,7 @@ Math.max(...values)
 
 Math.min(...values)
 
-🚀 How to Run
+## 🚀 How to Run
 
 Open math.html in your browser.
 
@@ -748,13 +749,11 @@ Enter numbers where required (e.g., for pow, atan2, max, min).
 
 Click the buttons to see results instantly.
 
-📖 Learning Goals
+## 📖 Learning Goals
 
-Get hands-on with JavaScript Math API.
-
-Learn when to use each method.
-
-Practice handling user input with numbers.
+=> Get hands-on with JavaScript Math API.
+=> Learn when to use each method.
+=> Practice handling user input with numbers.
 
 
 
