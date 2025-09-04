@@ -641,8 +641,11 @@ Each Math function has its own button and separate function implementation in Ja
 ## 📂 Features
 
 -> Covers almost all Math methods & constants.
+
 -> Each method is bound to a button for quick testing.
+
 -> Accepts user input where required (example: Math.pow(x, y)).
+
 -> Results are displayed dynamically in the page.
 
 ## 📘 Methods Covered
@@ -752,8 +755,11 @@ Click the buttons to see results instantly.
 ## 📖 Learning Goals
 
 => Get hands-on with JavaScript Math API.
+
 => Learn when to use each method.
+
 => Practice handling user input with numbers.
+
 
 
 
