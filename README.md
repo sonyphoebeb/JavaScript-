@@ -630,7 +630,131 @@ I created a Student constructor function and practiced:
     3. Object.entries() → Displays all key–value pairs of the student object.  
     4. Add Extra Property → Demonstrates JavaScript’s flexibility by adding new properties (city) at runtime.   
 
+📅 Date: 04-09-2025  
+# Day 19 – JavaScript Basics 
 
+## 🧮 JavaScript Math Functions Practice
+
+This project is a practice playground for all built-in JavaScript Math methods.
+Each Math function has its own button and separate function implementation in JavaScript.
+
+## 📂 Features
+
+ -> Covers almost all Math methods & constants.
+ -> Each method is bound to a button for quick testing.
+ -> Accepts user input where required (example: Math.pow(x, y)).
+ -> Results are displayed dynamically in the page.
+
+##📘 Methods Covered
+🔹 Value Methods
+
+Math.abs(x) → Absolute value of x
+
+Math.sign(x) → Sign of x (+, -, or 0)
+
+Math.trunc(x) → Integer part of x
+
+Math.round(x) → Rounds to nearest integer
+
+Math.ceil(x) → Rounds up
+
+Math.floor(x) → Rounds down
+
+🔹 Trigonometry & Hyperbolic
+
+Math.sin(x)
+
+Math.cos(x)
+
+Math.tan(x)
+
+Math.asin(x)
+
+Math.acos(x)
+
+Math.atan(x)
+
+Math.atan2(y, x)
+
+Math.sinh(x)
+
+Math.cosh(x)
+
+Math.tanh(x)
+
+Math.asinh(x)
+
+Math.acosh(x)
+
+Math.atanh(x)
+
+🔹 Exponential & Logarithms
+
+Math.exp(x)
+
+Math.expm1(x)
+
+Math.log(x)
+
+Math.log1p(x)
+
+Math.log10(x)
+
+Math.log2(x)
+
+Math.pow(x, y)
+
+Math.sqrt(x)
+
+Math.cbrt(x)
+
+🔹 Random & Precision
+
+Math.random()
+
+Math.fround(x)
+
+Math.clz32(x)
+
+🔹 Constants
+
+Math.PI
+
+Math.E
+
+Math.LN2
+
+Math.LN10
+
+Math.LOG2E
+
+Math.LOG10E
+
+Math.SQRT1_2
+
+Math.SQRT2
+
+🔹 Comparison
+
+Math.max(...values)
+
+Math.min(...values)
+
+🚀 How to Run
+
+Open math.html in your browser.
+
+Enter numbers where required (e.g., for pow, atan2, max, min).
+
+Click the buttons to see results instantly.
+
+📖 Learning Goals
+
+Get hands-on with JavaScript Math API.
+
+Learn when to use each method.
+
+Practice handling user input with numbers.
 
 
 
