@@ -428,24 +428,27 @@ Inside each patient, values are separated by (:)
 
 Loading data into dropdown     
 
-              window.onload = function () {       
+              window.onload = function () 
+            {       
               patients = inputPatientsData.split(";").map(patientsData => patientsData.split(":"));      
 
                 let dropdown = document.getElementById("patientDropdown");     
-               dropdown.innerHTML = '<option value="" disabled selected>Select Patient</option>';     
+                dropdown.innerHTML = '<option value="" disabled selected>Select Patient</option>';     
 
-                 for (let i = 0; i < patients.length; i++) {     
-        let option = document.createElement("option");      
-            option.value = i;        
-               option.text = "patient" + (i + 1);            
-               dropdown.appendChild(option);          
+                 for (let i = 0; i < patients.length; i++) 
+                 {     
+                     let option = document.createElement("option");      
+                     option.value = i;        
+                     option.text = "patient" + (i + 1);            
+                     dropdown.appendChild(option);          
                }          
-                      };             
+            };             
 
 
  🔍 Step by step:          
 
-     inputPatientsData.split(";") → breaks the big string into multiple patients.               
+     inputPatientsData.split(";") → breaks the big string into multiple patients.  
+     
      .map(patientsData => patientsData.split(":")) → splits each patient’s data by : into an array.              
 
      Example: "1:2:3;4:5:6" → [["1","2","3"], ["4","5","6"]]                
@@ -457,25 +460,23 @@ Loading data into dropdown
         Handling patient selection              
            function showPatientData() {               
                let index = document.getElementById("patientDropdown").value;                  
-                if (index === "") return;             
- 
-                       selectedPatient = patients[index];              
-                document.getElementById("indexResult").textContent = "";                
+               if (index === "") return;             
+               selectedPatient = patients[index];              
+               document.getElementById("indexResult").textContent = "";                
+               let indexDropdown = document.getElementById("indexDropdown");                
+               indexDropdown.innerHTML = '<option value="" disabled selected>Select Index</option>';                 
 
-             let indexDropdown = document.getElementById("indexDropdown");                
-                               indexDropdown.innerHTML = '<option value="" disabled selected>Select Index</option>';                 
-
-                    for (let i = 0; i < selectedPatient.length; i++) {               
-                let option = document.createElement("option");              
-                         option.value = i;              
-                   option.text = i;                 
-                   indexDropdown.appendChild(option);                    
-                 }                       
+               for (let i = 0; i < selectedPatient.length; i++) 
+               {               
+                     let option = document.createElement("option");              
+                     option.value = i;              
+                     option.text = i;                 
+                     indexDropdown.appendChild(option);                    
+               }                       
 
                  document.getElementById("getValueBtn").disabled = true;                         
-
-                        indexDropdown.onchange = function () {               
-                  document.getElementById("getValueBtn").disabled = false;                
+                 indexDropdown.onchange = function () {               
+                 document.getElementById("getValueBtn").disabled = false;                
                  };                   
             }              
            
@@ -483,90 +484,82 @@ Loading data into dropdown
 🔍 Step by step:              
 
             Get which patient was selected (index).                     
-
-                        If nothing is selected → exit.              
-
-                            Store that patient’s data in selectedPatient.                 
-
-                              Reset the index dropdown and add indexes 0, 1, 2… for that patient.                         
-
-                         Disable the button until the user actually selects an index.                      
+            If nothing is selected → exit.              
+            Store that patient’s data in selectedPatient.                 
+            Reset the index dropdown and add indexes 0, 1, 2… for that patient.                         
+            Disable the button until the user actually selects an index.                      
 
           Showing the selected value                   
-            function showIndexValue() {                                
+            function showIndexValue() 
+            {                                
                    let idx = document.getElementById("indexDropdown").value;                            
-                 let patientIndex = document.getElementById("patientDropdown").value;                               
-                  if (idx === "") {                                         
-                      document.getElementById("indexResult").textContent = "Please select an index!";                                    
-                       return;                  
-                                             }                   
-                              document.getElementById("indexResult").textContent =                             
-                                               `Value at index ${idx} of patient${parseInt(patientIndex) + 1} is ${selectedPatient[idx]}`;                                 
-                     }                    
+                   let patientIndex = document.getElementById("patientDropdown").value;                               
+                   if (idx === "") {                                         
+                   document.getElementById("indexResult").textContent = "Please select an index!";                                    
+                   return;                  
+                  }                   
+                      document.getElementById("indexResult").textContent =                             
+                        `Value at index ${idx} of patient${parseInt(patientIndex) + 1} is ${selectedPatient[idx]}`;                                 
+                  }                    
 
 
 🔍 Step by step:                        
 
     Get the index from indexDropdown.             
-
-           Get the patient number from patientDropdown.              
-
-           If no index is chosen, show a warning.               
-
-                         Otherwise → display the value with a template string.                  
+    Get the patient number from patientDropdown.              
+    If no index is chosen, show a warning.               
+    Otherwise → display the value with a template string.                  
 
  
-📌 Example:          
+## 📌 Example:          
 
             Select patient3             
+            Select index 2               
+            Output → Value at index 2 of patient3 is 23             
 
-                      Select index 2               
+## 🔑 Key Learnings      
 
-                           Output → Value at index 2 of patient3 is 23             
+   JavaScript split()          
 
-🔑 Key Learnings      
-
-          JavaScript split()          
-
-         Learned how to split strings into arrays.            
-
-                  Nested split for multi-level data (; for patients, : for values).        
-
-                Arrays and Indexing          
-
-                   Arrays start from 0 in JavaScript.         
-
-                   Used indexing to fetch patient values.           
-
-           DOM Manipulation                
-
-                document.createElement() to build dropdowns.                
- 
-                 appendChild() to add them into HTML.                   
-
-                 Changing inner content with .textContent and .innerHTML.              
-
-                  Event Handling            
-
-                   onchange → runs when dropdown changes.                
-
-                onclick → runs when button is clicked.                   
-
-                 Dynamically enabling/disabling buttons.                
+   Learned how to split strings into arrays.  
+         
+   Nested split for multi-level data (; for patients, : for values).  
+                  
+   Arrays and Indexing          
+                
+   Arrays start from 0 in JavaScript.    
                    
-               Template Literals               
- 
-          Used backticks (``) with ${} placeholders for clear outputs.                
+   Used indexing to fetch patient values.  
+   
+   DOM Manipulation                
 
-  📝 Notes to Self          
+   document.createElement() to build dropdowns.                
  
-          Always reset dropdowns when a new selection is made.             
+   appendChild() to add them into HTML.                   
+
+   Changing inner content with .textContent and .innerHTML.              
+
+   Event Handling            
+
+   onchange → runs when dropdown changes.                
+
+   onclick → runs when button is clicked.                   
+
+   Dynamically enabling/disabling buttons.                
+                   
+   Template Literals               
+ 
+   Used backticks (``) with ${} placeholders for clear outputs.                
+
+##  📝 Notes to Self          
+ 
+Always reset dropdowns when a new selection is made.             
                            
-                      Remember to handle empty selections properly (avoid showing 0 by default).               
+Remember to handle empty selections properly (avoid showing 0 by default).               
 
-                    Using disabled selected in <option> helps create a placeholder.                
+Using disabled selected in <option> helps create a placeholder.                
 
-             This exercise improved my understanding of arrays, dropdowns, and event handling in JS.              
+This exercise improved my understanding of arrays, dropdowns, and event handling in JS.              
  
 👉 This was not a project, but a practice exercise where I learned how to connect HTML and JavaScript using a real example (patients and indexes).                      
 
@@ -579,6 +572,7 @@ Loading data into dropdown
 This project is a practice exercise covering different JavaScript string methods and a weekday converter.
 
 ## String Methods Practiced
+
          1. String.raw → Display raw strings without interpreting escape characters
          2. String.fromCodePoint → Convert Unicode values to characters or emojis
          3. escape / unescape → Encode and decode strings
