@@ -1067,17 +1067,33 @@ Typed Arrays share many methods with Standard Arrays:
       -> reduceRight()	Reduce the values of an array to a single value (right-to-left)
   	
       -> reverse()	Reverses a typed array in place
+  	
       -> set()	Stores values in a typed array from another array
+  	
       -> slice()	Reurns a new typed array sliced out of a typed array
+  	
       -> some()	Reurns true if one element satisfies a condition
+  	
       -> sort()	Sorts an array in place
+  	
       -> subarray()	Returns a subarray in the same memory space
+  	
       -> toLocaleString()	Returns all elements converted with their toLocaleString methods
+  	
       -> toReversed()	Reverses an array in place
+  	
       -> toSorted()	Sorts an array in place
+  	
       -> toString()	Returns a string of all typed array elements
+  	
       -> values()	Returns an iterator object with the values of an typed array
+  	
       ->with()	Returns a new typed array with an updated array element
+
+
+
+
+   
 
 
 
