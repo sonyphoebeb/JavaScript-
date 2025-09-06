@@ -755,6 +755,261 @@ Click the buttons to see results instantly.
 => Practice handling user input with numbers.
 
 
+📅 Date: 06-09-2025  
+# Day 21 – JavaScript Basics 
+
+##Basic Array Methods
+1.	Array length   
+2.	Array toString()
+3.	Array at()
+4.	Array join()
+5.	Array pop()
+6.	Array push()
+7.	Array shift()
+8.	Array unshift()
+9.	Array delete()
+10.	Array concat()
+11.	Array copyWithin()
+12.	Array flat()
+13.	Array slice()
+14.	Array splice()
+15.	Array toSpliced()
+
+
+##JavaScript Sets
+**Basic Set Methods
+1.	new Set()  //initialization
+2.	add()      //adding values
+3.	clear()    //clears entire set 
+4.	delete()   //deletes values
+5.	entries()  //prints [keys, values] which are same
+6.	forEach()  //calls a function for each element 
+7.	has()      //checks T/F
+8.	keys()     //returns a set iterator with all the values
+9.	values()   //returns an iterator object with all the values
+10.	Set Properties  
+11.	size     //length of a set
+
+**Logic Methods
+1.	union()                 //adds all the elements in 2 sets and display by removing the duplicates
+2.	difference()            //returns the elements which are not similar in only A set
+3.	intersection()         //returns the elements which are similar in both the sets
+4.	isDisjointFrom()       //returns true if this child/parent set has no elements in common with the parent/child set
+5.	isSubsetOf()           //returns true if all elements in child set is also elements in the parent set
+6.	isSupersetOf()         //returns true if all elements in the child set are also in parent set
+7.	symmetricDifference()  //returns the elements which are not similar in both the sets
+
+**The WeakSet Object
+1.	A JavaScript WeakSet is a collection of values where the values must be objects.
+2.	Garbage Collection: When the value is garbage collected, its is removed from the WeakSet.
+     example: // Remove the Object from memory
+                myObj = null;
+            // Now myObj in mySet will be garbage collected
+3.	Primitive values cannot be values in a WeakSet: The values must be objects.
+4.	Tracking Objects 
+5.	Not Iterable, WeakSets are not enumerable, You cannot iterate over the values with for loops, forEach(), or values().
+6.	Limited Methods
+    -> new WeakSet()    // Creates a new WeakSet object
+    -> add(object)	   // Adds an Object to a WeakSet
+    -> delete(object)   // Removes a WeakSet object
+    -> has(object)	    // Returns true if an object exists in a WeakSet
+7.	WeakSet does not have:
+    -> A size property
+    -> A spread operator (...)
+    -> A clear() method
+    -> Any logic methods (union, difference, intersection)
+    -> Any iteration methods (forEach, keys, values, entries)
+
+
+##JavaScript Maps
+   You can create a JavaScript Map by:
+    -> Passing an Array to new Map()
+    -> Create a Map and use Map.set()
+
+**JavaScript Map Methods
+1.	Map.get()      // get the value of a key in a map
+2.	Map.set()      // add elements to a map
+3.	Map.size       // returns the number of elements in a map
+4.	Map.delete()   // removes a map element
+5.	Map.clear()    // removes all the elements from a map
+6.	Map.has()      // returns true if a key exists in a map
+7.	Map.forEach()  // invokes a callback for each key/value pair in a map
+8.	Map.entries()  // returns an iterator object with the [key,values] in a map
+9.	Map.keys()     // returns an iterator object with the keys in a map
+10.	Map.values()  // returns an iterator object with the values in a map
+
+**Objects as Keys
+   example:  // Create Objects
+              const apples = {name: 'Apples'};
+              const bananas = {name: 'Bananas'};
+              const oranges = {name: 'Oranges'};
+
+            // Create a Map
+              const fruits = new Map();
+  
+           // Add new Elements to the Map
+            fruits.set(apples, 500);
+            fruits.set(bananas, 300);
+            fruits.set(oranges, 200);
+
+**JavaScript Map.groupBy()
+  It groups elements of an object according to string values returned from a callback function.
+
+
+##JavaScript RegExp
+
+1. A Regular Expression is a sequence of characters that forms a search pattern.
+    RegExp are be used for:
+       -> Text searching
+       -> Text replacing
+       -> Text validation
+
+2. Syntax :     
+    /pattern/modifier flags;
+
+3. Using String Methods: 
+   Regular expressions are often used with the string methods
+       -> match(regex)	        // Returns an Array of results
+       -> matchAll(regexp)      // Returns an Iterator of results
+       -> replace(regex)        // Returns a new String
+       -> replaceAll(regexp,s)	// Returns a new String
+       -> search(regex)	        // Returns the index of the first match
+       -> split(regexp)	        // Returns an Array of results
+
+4. RexExp Metacharacters: 
+   Metacharacters are characters with a special meaning, they can be used to match digits, words, spaces, and more.
+       -> \d	   // Matches Digits
+       -> \D	   // Matches None Digits
+       -> \w	   // Matches alphanumeric Word characters
+       -> \W	   // Matches None alphanumeric Word characters
+       -> \s	   // Matches Spaces
+       -> \S	   // Matches None Spaces
+       -> \ddd	   // Matches characters by the Octal numer ddd
+       -> \xhh	   // Matches characters by the HexadecimaL number hh
+       -> \uhhhh   // Matches Unicode characters by the hex number hhhh
+
+
+5. JavaScript RegExp Quantifiers: 
+   Quantifiers define the numbers of characters or expressions to match.
+       -> x+	  // Matches at least one x
+       -> x*	  // Matches zero or more occurrences of x
+       -> x?	  // Matches zero or one occurrences of x
+       -> x{n}	  // Matches n occurences of x
+       -> x{n,m}  // Matches from n to m occurences of x
+       -> x{n,}	  // Matches n or more occurences of x
+
+6. Regular Expression Assertions:
+   Assertions matches Boundaries and Lookarounds
+       -> ^	        String boundary	    // Matches the beginning of a string
+       -> $	        String boundary	    // Matches the end of a string
+       -> \b	        Word boundary	    // Matches the beginning or end of a word
+       -> (?=...)	Lookahead           // Matches the subsequent string
+       -> (?!...)	Lookahead	    // Matches NOT the subsequent string
+       -> (?<=...)	Lookbehind	    // Matches the previous string
+       -> (?<!...)	Lookbehind	    // Matches NOT the previous string
+
+7.RegExp Character Classes:
+  Character Classes are characters enclosed in square brackets []
+       -> [a]	     // Matches the character between the brackets
+       -> [^a]	     // Matches all characters NOT between the brackets
+       -> [abc]	     // Matches all characters between the brackets
+       -> [^abc]     // Matches all characters NOT between the brackets
+       -> [a-z]	     // Matches all characters in the range from a to z
+       -> [^a-z]     // Matches all characters NOT in the range from a to z
+       -> [0-9]	     // Matches all characters in the range from 0 to 9
+       -> [^0-9]     // Matches all characters NOT in the range from 0 to 9
+
+8. JavaScript Regex Flags:
+   Flags are parameters that can modify how a regex pattern is used, such as making it case-insensitive or global.
+       -> /d	// Performs substring matches (new 2022)
+       -> /g	// Performs a global match (find all)
+       -> /i	// Performs case-insensitive matching
+       -> /m	// Performs multiline matching
+       -> /s	// Allows . (dot) to match line terminators (new 2018)
+       -> /u	// Enables Unicode support (new 2015)
+       -> /v	// An upgrade to the /u flag for better Unicode support (new 2025)
+       -> /y	// Performs a "sticky" search (new 2015)
+
+9. JavaScript RegExp Objects:
+   RegExp is a regular expression object with predefined properties and methods.
+        -> Using test(): The test() method is a RegExp expression method, it searches a string for a pattern, and returns true or false, depending on the result. 
+        -> Using exec(): The exec() method is a RegExp expression method, it searches a string for a specified pattern, and returns the found text as an object, if no match is found, it returns an empty (null) object.  
+        -> Using escape(): The RegExp.escape() method returns string where characters that belongs to the regular expression syntax are escaped, this makes it possible to treat characters like +, *, ?, ^, $, (, ), [, ], {, }, |, 
+                           and \ literally, and not as part of a regular expression.
+
+10. RegExp Methods:
+       -> compile()	// Compiles a regular expression (Deprecated)
+       -> constructor	// Returns the function that created the RegExp prototype
+       -> dotAll	// Returns true if the s flag is set in the expression
+       -> escape()	// Returns a string where characters that belongs to the regular expression syntax are escaped
+       -> exec()	// Returns a result array for a matches in a string
+       -> flags	        // Returns the modifiers set in the expression
+       -> global	// Returns true if the g flag is set in the expression
+       -> hasIndices	// Returns true if the d flag is set 
+       -> ignoreCase	// Returns true if the i flag is set
+       -> lastIndex	// Specifies the index at which to start the next match
+       -> multiline	// Returns true if the m modifier is set
+       -> source	// Returns the text of the RegExp pattern
+       -> sticky	// Returns true if the y flag is set
+       -> test()	// Tests for a match in a string. Returns true or false
+       -> toString()	// Returns the string value of the regular expression
+       -> unicode	// Returns true if the u flag is set
+       -> unicodeSets	// Returns true if the v flag is set
+
+
+##JavaScript Typed Arrays
+   -> Typed arrays was designed for handling raw binary data.
+   -> Unlike standard arrays, typed arrays are array buffers of fixed length.
+   -> Typed arrays store elements of fixed types like 8-bit integers or 32-bit numbers.
+
+1.	Typed Array Methods 
+Typed Arrays share many methods with Standard Arrays:
+      -> Iteration: forEach(), map(), filter(), reduce(), reduceRight(), every(), some(), find(), findIndex(), findLast(), findLastIndex().
+      -> Searching: includes(), indexOf(), lastIndexOf().
+      -> Manipulation: at(), copyWithin(), fill(), reverse(), set(), slice(), sort(), subarray().
+      -> Conversion: join(), toLocaleString(), toString().
+      -> Non-mutating methods: toReversed(), toSorted(), with().
+2.	Typed Array Methods
+      -> at()	// Returns one indexed element from a typed array
+      -> byteLength	// Returns the length (in bytes) of a typed array.
+      -> byteOffset	// Returns the offset (in bytes) of a typed array from the start of its ArrayBuffer
+      -> BYTES_PER_ELEMENT	// Returns the number of bytes used to store one element in a typed array
+      -> copyWithin()    //Copies array elements to another position in the array
+      -> entries()	Returns an iterator object with the key/value pairs from the array
+      -> every()	Executes a function for each typed array element
+      -> fill()	Fill all array elements with a value
+      -> filter()	Returns a new array filled with elements that pass a test
+      -> find()	Returns the first element that satisfies a condition
+      -> findIndex()	Returns the index of the first element that satisfies a condition
+      -> findLast()	Returns the last element that satisfies a condition
+      -> findLastIndex()	Returns the index of the last element that satisfies a condition
+      -> forEach()	Executes a function for each typed array element
+      -> from()	Returns a typed array from any object with a length property
+      -> includes()	Returns true if an array includes a specified value
+      -> indexOf()	Returns the first index (position) of a specified value
+      -> join()	Returns the elements of an array as a string
+      -> keys()	Returns the keys of a typed array
+      -> lastIndexOf()	Returns the last index (position) of a specified value
+      -> length	Returns the lenth of the typed array
+      -> map()	Returns a new array from calling a function for every array element
+      -> name	Returns the name of the typed array
+      -> of()	Returns a new typed array from an existing array
+      -> reduce()	Reduce the values of an array to a single value
+      -> reduceRight()	Reduce the values of an array to a single value (right-to-left)
+      -> reverse()	Reverses a typed array in place
+      -> set()	Stores values in a typed array from another array
+      -> slice()	Reurns a new typed array sliced out of a typed array
+      -> some()	Reurns true if one element satisfies a condition
+      -> sort()	Sorts an array in place
+      -> subarray()	Returns a subarray in the same memory space
+      -> toLocaleString()	Returns all elements converted with their toLocaleString methods
+      -> toReversed()	Reverses an array in place
+      -> toSorted()	Sorts an array in place
+      -> toString()	Returns a string of all typed array elements
+      -> values()	Returns an iterator object with the values of an typed array
+      ->with()	Returns a new typed array with an updated array element
+
+
 
 
 
