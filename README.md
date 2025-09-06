@@ -992,8 +992,11 @@ Click the buttons to see results instantly.
 
 
 ##JavaScript Typed Arrays
+
    -> Typed arrays was designed for handling raw binary data.
+   
    -> Unlike standard arrays, typed arrays are array buffers of fixed length.
+   
    -> Typed arrays store elements of fixed types like 8-bit integers or 32-bit numbers.
 
 1.	Typed Array Methods 
@@ -1008,24 +1011,43 @@ Typed Arrays share many methods with Standard Arrays:
       -> Conversion: join(), toLocaleString(), toString().
   	
       -> Non-mutating methods: toReversed(), toSorted(), with().
+
+   
 3.	Typed Array Methods
       -> at()	// Returns one indexed element from a typed array
+  	
       -> byteLength	// Returns the length (in bytes) of a typed array.
+  	
       -> byteOffset	// Returns the offset (in bytes) of a typed array from the start of its ArrayBuffer
+  	
       -> BYTES_PER_ELEMENT	// Returns the number of bytes used to store one element in a typed array
+  	
       -> copyWithin()    //Copies array elements to another position in the array
+  	
       -> entries()	Returns an iterator object with the key/value pairs from the array
+  	
       -> every()	Executes a function for each typed array element
+  	
       -> fill()	Fill all array elements with a value
+  	
       -> filter()	Returns a new array filled with elements that pass a test
+  	
       -> find()	Returns the first element that satisfies a condition
+  	
       -> findIndex()	Returns the index of the first element that satisfies a condition
+  	
       -> findLast()	Returns the last element that satisfies a condition
+  	
       -> findLastIndex()	Returns the index of the last element that satisfies a condition
+  	
       -> forEach()	Executes a function for each typed array element
+  	
       -> from()	Returns a typed array from any object with a length property
+  	
       -> includes()	Returns true if an array includes a specified value
+  	
       -> indexOf()	Returns the first index (position) of a specified value
+  	
       -> join()	Returns the elements of an array as a string
       -> keys()	Returns the keys of a typed array
       -> lastIndexOf()	Returns the last index (position) of a specified value
