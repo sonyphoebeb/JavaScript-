@@ -921,23 +921,31 @@ Click the buttons to see results instantly.
 
 8. JavaScript Regex Flags:
    Flags are parameters that can modify how a regex pattern is used, such as making it case-insensitive or global.
+   
        -> /d	// Performs substring matches (new 2022)
+   
        -> /g	// Performs a global match (find all)
+   
        -> /i	// Performs case-insensitive matching
+   
        -> /m	// Performs multiline matching
+   
        -> /s	// Allows . (dot) to match line terminators (new 2018)
+   
        -> /u	// Enables Unicode support (new 2015)
+   
        -> /v	// An upgrade to the /u flag for better Unicode support (new 2025)
+   
        -> /y	// Performs a "sticky" search (new 2015)
 
-9. JavaScript RegExp Objects:
+10. JavaScript RegExp Objects:
    RegExp is a regular expression object with predefined properties and methods.
         -> Using test(): The test() method is a RegExp expression method, it searches a string for a pattern, and returns true or false, depending on the result. 
         -> Using exec(): The exec() method is a RegExp expression method, it searches a string for a specified pattern, and returns the found text as an object, if no match is found, it returns an empty (null) object.  
         -> Using escape(): The RegExp.escape() method returns string where characters that belongs to the regular expression syntax are escaped, this makes it possible to treat characters like +, *, ?, ^, $, (, ), [, ], {, }, |, 
                            and \ literally, and not as part of a regular expression.
 
-10. RegExp Methods:
+11. RegExp Methods:
        -> compile()	// Compiles a regular expression (Deprecated)
        -> constructor	// Returns the function that created the RegExp prototype
        -> dotAll	// Returns true if the s flag is set in the expression
