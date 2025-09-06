@@ -916,17 +916,27 @@ Click the buttons to see results instantly.
        -> (?<!...)	Lookbehind	    // Matches NOT the previous string
 
 7.RegExp Character Classes:
+
   Character Classes are characters enclosed in square brackets []
-       -> [a]	     // Matches the character between the brackets
+  
+       -> [a]	     // Matches the character between the brackets 
+       
        -> [^a]	     // Matches all characters NOT between the brackets
+       
        -> [abc]	     // Matches all characters between the brackets
+       
        -> [^abc]     // Matches all characters NOT between the brackets
+       
        -> [a-z]	     // Matches all characters in the range from a to z
+       
        -> [^a-z]     // Matches all characters NOT in the range from a to z
+       
        -> [0-9]	     // Matches all characters in the range from 0 to 9
+       
        -> [^0-9]     // Matches all characters NOT in the range from 0 to 9
 
 8. JavaScript Regex Flags:
+   
    Flags are parameters that can modify how a regex pattern is used, such as making it case-insensitive or global.
    
        -> /d	// Performs substring matches (new 2022)
@@ -946,6 +956,7 @@ Click the buttons to see results instantly.
        -> /y	// Performs a "sticky" search (new 2015)
 
 10. JavaScript RegExp Objects:
+    
    RegExp is a regular expression object with predefined properties and methods.
 
         -> Using test(): The test() method is a RegExp expression method, it searches a string for a pattern, and returns true or false, depending on the result.
@@ -956,6 +967,7 @@ Click the buttons to see results instantly.
                            and \ literally, and not as part of a regular expression.
 
 12. RegExp Methods:
+    
        -> compile()	// Compiles a regular expression (Deprecated)
     
        -> constructor	// Returns the function that created the RegExp prototype
@@ -999,8 +1011,9 @@ Click the buttons to see results instantly.
    
    -> Typed arrays store elements of fixed types like 8-bit integers or 32-bit numbers.
 
-1.	Typed Array Methods 
-Typed Arrays share many methods with Standard Arrays:
+1.	Typed Array Methods
+   
+   Typed Arrays share many methods with Standard Arrays:
 
       -> Iteration: forEach(), map(), filter(), reduce(), reduceRight(), every(), some(), find(), findIndex(), findLast(), findLastIndex().
   	
@@ -1014,6 +1027,7 @@ Typed Arrays share many methods with Standard Arrays:
 
    
 3.	Typed Array Methods
+4.	
       -> at()	// Returns one indexed element from a typed array
   	
       -> byteLength	// Returns the length (in bytes) of a typed array.
