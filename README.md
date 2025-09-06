@@ -1049,14 +1049,23 @@ Typed Arrays share many methods with Standard Arrays:
       -> indexOf()	Returns the first index (position) of a specified value
   	
       -> join()	Returns the elements of an array as a string
+  	
       -> keys()	Returns the keys of a typed array
+  	
       -> lastIndexOf()	Returns the last index (position) of a specified value
+  	
       -> length	Returns the lenth of the typed array
+  	
       -> map()	Returns a new array from calling a function for every array element
+  	
       -> name	Returns the name of the typed array
+  	
       -> of()	Returns a new typed array from an existing array
+  	
       -> reduce()	Reduce the values of an array to a single value
+  	
       -> reduceRight()	Reduce the values of an array to a single value (right-to-left)
+  	
       -> reverse()	Reverses a typed array in place
       -> set()	Stores values in a typed array from another array
       -> slice()	Reurns a new typed array sliced out of a typed array
