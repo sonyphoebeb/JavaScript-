@@ -940,28 +940,47 @@ Click the buttons to see results instantly.
 
 10. JavaScript RegExp Objects:
    RegExp is a regular expression object with predefined properties and methods.
-        -> Using test(): The test() method is a RegExp expression method, it searches a string for a pattern, and returns true or false, depending on the result. 
-        -> Using exec(): The exec() method is a RegExp expression method, it searches a string for a specified pattern, and returns the found text as an object, if no match is found, it returns an empty (null) object.  
+
+        -> Using test(): The test() method is a RegExp expression method, it searches a string for a pattern, and returns true or false, depending on the result.
+    
+        -> Using exec(): The exec() method is a RegExp expression method, it searches a string for a specified pattern, and returns the found text as an object, if no    match is found, it returns an empty (null) object.
+    
         -> Using escape(): The RegExp.escape() method returns string where characters that belongs to the regular expression syntax are escaped, this makes it possible to treat characters like +, *, ?, ^, $, (, ), [, ], {, }, |, 
                            and \ literally, and not as part of a regular expression.
 
-11. RegExp Methods:
+12. RegExp Methods:
        -> compile()	// Compiles a regular expression (Deprecated)
+    
        -> constructor	// Returns the function that created the RegExp prototype
+    
        -> dotAll	// Returns true if the s flag is set in the expression
+    
        -> escape()	// Returns a string where characters that belongs to the regular expression syntax are escaped
+    
        -> exec()	// Returns a result array for a matches in a string
+    
        -> flags	        // Returns the modifiers set in the expression
+    
        -> global	// Returns true if the g flag is set in the expression
-       -> hasIndices	// Returns true if the d flag is set 
+    
+       -> hasIndices	// Returns true if the d flag is set
+    
        -> ignoreCase	// Returns true if the i flag is set
+    
        -> lastIndex	// Specifies the index at which to start the next match
+    
        -> multiline	// Returns true if the m modifier is set
+    
        -> source	// Returns the text of the RegExp pattern
+    
        -> sticky	// Returns true if the y flag is set
+    
        -> test()	// Tests for a match in a string. Returns true or false
+    
        -> toString()	// Returns the string value of the regular expression
+    
        -> unicode	// Returns true if the u flag is set
+    
        -> unicodeSets	// Returns true if the v flag is set
 
 
