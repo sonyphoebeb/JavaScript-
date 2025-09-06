@@ -810,14 +810,21 @@ Click the buttons to see results instantly.
 5.	Not Iterable, WeakSets are not enumerable, You cannot iterate over the values with for loops, forEach(), or values().
 6.	Limited Methods
     -> new WeakSet()    // Creates a new WeakSet object
+  	
     -> add(object)	   // Adds an Object to a WeakSet
+  	
     -> delete(object)   // Removes a WeakSet object
+  	
     -> has(object)	    // Returns true if an object exists in a WeakSet
-7.	WeakSet does not have:
+8.	WeakSet does not have:
     -> A size property
+  	
     -> A spread operator (...)
+  	
     -> A clear() method
+  	
     -> Any logic methods (union, difference, intersection)
+  	
     -> Any iteration methods (forEach, keys, values, entries)
 
 
@@ -991,12 +998,17 @@ Click the buttons to see results instantly.
 
 1.	Typed Array Methods 
 Typed Arrays share many methods with Standard Arrays:
+
       -> Iteration: forEach(), map(), filter(), reduce(), reduceRight(), every(), some(), find(), findIndex(), findLast(), findLastIndex().
+  	
       -> Searching: includes(), indexOf(), lastIndexOf().
+  	
       -> Manipulation: at(), copyWithin(), fill(), reverse(), set(), slice(), sort(), subarray().
+  	
       -> Conversion: join(), toLocaleString(), toString().
+  	
       -> Non-mutating methods: toReversed(), toSorted(), with().
-2.	Typed Array Methods
+3.	Typed Array Methods
       -> at()	// Returns one indexed element from a typed array
       -> byteLength	// Returns the length (in bytes) of a typed array.
       -> byteOffset	// Returns the offset (in bytes) of a typed array from the start of its ArrayBuffer
