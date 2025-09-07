@@ -65,10 +65,15 @@ Today I practiced different ways to display output in JavaScript and implemented
 5. Arithmetic Operators
 
       -> Implemented functions to perform operations on two input numbers:
+   
        Addition → +
+   
        Subtraction → -
+   
        Multiplication → *
+   
        Division → /
+   
        Modulus (Remainder) → %
    
    Each operator result is displayed dynamically inside a <p> tag.
