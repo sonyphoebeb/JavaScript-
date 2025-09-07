@@ -42,25 +42,35 @@ Today I practiced different ways to display output in JavaScript and implemented
 
 # ✅ Topics Covered
 1. JavaScript Display Methods
+   
      -> innerHTML → Change HTML content dynamically.
+   
      -> innerText → Display plain text inside HTML elements.
+   
      -> document.write() → Write directly to the page (but removes existing content if used after load).
+   
      -> window.alert() → Display content in an alert popup.
+   
      -> console.log() → Log output to the browser console.
+   
      -> window.print() → Print the current page.
 
-2. JavaScript Statements
+3. JavaScript Statements
      -> Simple statements like a = 5; b = 6; c = a + b;
+   
      -> Grouping statements inside functions and executing them via button click.
+   
      -> Undefined variables (let myName;) → results in undefined.
 
-3. Arithmetic Operators
-   -> Implemented functions to perform operations on two input numbers:
+5. Arithmetic Operators
+
+      -> Implemented functions to perform operations on two input numbers:
        Addition → +
        Subtraction → -
        Multiplication → *
        Division → /
        Modulus (Remainder) → %
+   
    Each operator result is displayed dynamically inside a <p> tag.
 
 # 📝 Practice Work
