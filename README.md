@@ -1120,8 +1120,65 @@ Click the buttons to see results instantly.
       ->with()	Returns a new typed array with an updated array element
 
 
+📅 Date: 08-09-2025  
+# Day 23 – JavaScript Basics
+
+## JavaScript Arrays Practice
+
+This project demonstrates the usage of basic JavaScript Array methods with simple examples and interactive buttons.
+
+## Methods Practiced
+
+1. Show Array: Displays the original array of college names.
+
+    Example:
+
+    ["RCE", "CRR", "VIT", "SRKR", "BVIT"]
 
 
+2. Array Length: Returns the number of elements in the array.
+
+    Example:
+
+     5
+
+
+3. toString(): Converts the array into a comma-separated string.
+
+    Example:
+
+    RCE,CRR,VIT,SRKR,BVIT
+
+
+4. at(index): Returns the element at the specified index.
+
+   Example (index = 2):
+
+   VIT
+
+
+5. join(separator): Joins all array elements with a given separator.
+
+    Example (separator = "*"):
+
+    RCE*CRR*VIT*SRKR*BVIT
+
+
+6. push(element): Adds a new element to the end of the array and returns the new length.
+
+    Example (push "KMIT"):
+
+     6
+
+
+7. pop(): Removes the last element from the array and returns it.
+
+    Example:
+
+    BVIT
+
+# Example Array Used
+var collageNames = ["RCE", "CRR", "VIT", "SRKR", "BVIT"];
    
 
 
