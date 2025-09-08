@@ -1131,37 +1131,37 @@ This project demonstrates the usage of basic JavaScript Array methods with simpl
 
 1. Show Array: Displays the original array of college names.
 
-    Example:
+      Example:
 
-    ["RCE", "CRR", "VIT", "SRKR", "BVIT"]
+      ["RCE", "CRR", "VIT", "SRKR", "BVIT"]
 
 
 2. Array Length: Returns the number of elements in the array.
 
-    Example:
+      Example:
 
-     5
+      5
 
 
 3. toString(): Converts the array into a comma-separated string.
 
-    Example:
+      Example:
 
-    RCE,CRR,VIT,SRKR,BVIT
+      RCE,CRR,VIT,SRKR,BVIT
 
 
 4. at(index): Returns the element at the specified index.
 
-   Example (index = 2):
+      Example (index = 2):
 
-   VIT
+      VIT
 
 
 5. join(separator): Joins all array elements with a given separator.
 
-    Example (separator = "*"):
+      Example (separator = "*"):
 
-    RCE*CRR*VIT*SRKR*BVIT
+      RCE*CRR*VIT*SRKR*BVIT
 
 
 6. push(element): Adds a new element to the end of the array and returns the new length.
