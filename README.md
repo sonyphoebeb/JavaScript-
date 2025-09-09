@@ -1180,7 +1180,50 @@ This project demonstrates the usage of basic JavaScript Array methods with simpl
 # Example Array Used
 var collageNames = ["RCE", "CRR", "VIT", "SRKR", "BVIT"];
    
+📅 Date: 09-09-2025  
+# Day 24 – JavaScript Basics
 
+# Array Methods Practice – Day’s Work
+
+Practiced Methods
+
+1. shift() – Removes the first element of the array and returns it.
+
+2. unshift() – Adds one or more elements to the beginning of the array and returns the new length.
+
+3. concat() – Merges two or more arrays into a new array.
+
+4. concat(value) – Also merges arrays with additional single values.
+
+5. copyWithin(target, start) – Copies elements within the same array to another position (overwrites existing elements).
+
+6. flat() – Flattens nested arrays into a new array.
+
+7. flatMap() – Maps each element, then flattens the result into a new array.
+
+8. splice(start, deleteCount, ...items)
+
+   Add elements at a given position.
+
+   Remove elements at a given position.
+
+9. toSpliced() – New ES2023 method: returns a new array with elements spliced, original array stays unchanged.
+
+10. slice(start, end?) – Extracts a section of an array into a new array.
+
+With one argument → removes from the start index till end.
+
+With two arguments → extracts between the given indexes.
+
+✅ Highlights from today’s practice
+
+Worked on adding & removing elements (shift, unshift, splice).
+
+Practiced copying and flattening arrays (copyWithin, flat, flatMap).
+
+Explored newer methods like toSpliced.
+
+Understood non-mutating vs mutating methods (e.g., slice doesn’t change original, but splice does).
 
 
 
