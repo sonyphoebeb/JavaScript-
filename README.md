@@ -1211,19 +1211,19 @@ Practiced Methods
 
 10. slice(start, end?) – Extracts a section of an array into a new array.
 
-With one argument → removes from the start index till end.
+   With one argument → removes from the start index till end.
 
-With two arguments → extracts between the given indexes.
+   With two arguments → extracts between the given indexes.
 
-✅ Highlights from today’s practice
+# ✅ Highlights from today’s practice
 
-Worked on adding & removing elements (shift, unshift, splice).
+  Worked on adding & removing elements (shift, unshift, splice).
 
-Practiced copying and flattening arrays (copyWithin, flat, flatMap).
+  Practiced copying and flattening arrays (copyWithin, flat, flatMap).
 
-Explored newer methods like toSpliced.
+  Explored newer methods like toSpliced.
 
-Understood non-mutating vs mutating methods (e.g., slice doesn’t change original, but splice does).
+  Understood non-mutating vs mutating methods (e.g., slice doesn’t change original, but splice does).
 
 
 
