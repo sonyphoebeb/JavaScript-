@@ -887,16 +887,20 @@ Click the buttons to see results instantly.
 ## JavaScript RegExp
 
 1. A Regular Expression is a sequence of characters that forms a search pattern.
-    RegExp are be used for:
+   
+2.    RegExp are be used for:
+   
        -> Text searching
        -> Text replacing
        -> Text validation
 
-2. Syntax :     
+3. Syntax :     
     /pattern/modifier flags;
 
-3. Using String Methods: 
+4. Using String Methods:
+   
    Regular expressions are often used with the string methods
+   
        -> match(regex)	        // Returns an Array of results
        -> matchAll(regexp)      // Returns an Iterator of results
        -> replace(regex)        // Returns a new String
@@ -904,8 +908,10 @@ Click the buttons to see results instantly.
        -> search(regex)	        // Returns the index of the first match
        -> split(regexp)	        // Returns an Array of results
 
-4. RexExp Metacharacters: 
+5. RexExp Metacharacters:
+   
    Metacharacters are characters with a special meaning, they can be used to match digits, words, spaces, and more.
+   
        -> \d	   // Matches Digits
        -> \D	   // Matches None Digits
        -> \w	   // Matches alphanumeric Word characters
@@ -917,8 +923,10 @@ Click the buttons to see results instantly.
        -> \uhhhh   // Matches Unicode characters by the hex number hhhh
 
 
-5. JavaScript RegExp Quantifiers: 
+6. JavaScript RegExp Quantifiers:
+   
    Quantifiers define the numbers of characters or expressions to match.
+   
        -> x+	  // Matches at least one x
        -> x*	  // Matches zero or more occurrences of x
        -> x?	  // Matches zero or one occurrences of x
@@ -926,8 +934,10 @@ Click the buttons to see results instantly.
        -> x{n,m}  // Matches from n to m occurences of x
        -> x{n,}	  // Matches n or more occurences of x
 
-6. Regular Expression Assertions:
+7. Regular Expression Assertions:
+   
    Assertions matches Boundaries and Lookarounds
+   
        -> ^	        String boundary	    // Matches the beginning of a string
        -> $	        String boundary	    // Matches the end of a string
        -> \b	        Word boundary	    // Matches the beginning or end of a word
