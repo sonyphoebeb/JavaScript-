@@ -1240,8 +1240,122 @@ Practiced Methods
   Explored newer methods like toSpliced.
 
   Understood non-mutating vs mutating methods (e.g., slice doesn’t change original, but splice does).
+  
+
+📅 Date: 10-09-2025  
+# Day 25 – JavaScript Basics
+
+# 📘 JavaScript Arrays – Search, Sort & Reverse (Practice)
+
+Today’s practice focused on array search, sorting, and reversing methods.
+
+I wrote JavaScript functions for each method and connected them with buttons and <p> tags in a separate HTML file for output.
+
+# 🔍 Searching Methods
+
+1. indexOf()
+
+    Returns the first index of an element.
+
+    socialMedia.indexOf("Whatsapp");
 
 
+2. lastIndexOf()
+
+    Returns the last index of an element.
+
+    socialMedia.lastIndexOf("Facebook");
+
+
+3. includes()
+
+    Returns true/false if an element exists.
+
+    socialMedia.includes("Snapchat");
+
+
+4. find()
+
+    Returns the first element that matches a condition.
+
+    numbers.find(value => value > 50);
+
+
+5. findIndex()
+
+    Returns the index of the first element that matches a condition.
+
+    numbers.findIndex(value => value > 50);
+
+
+6. findLast()
+
+    Returns the last element that matches a condition.
+
+    numbers.findLast(value => value > 50);
+
+
+7. findLastIndex()
+
+    Returns the index of the last element that matches a condition.
+
+    numbers.findLastIndex(value => value > 50);
+
+# 🔃 Sorting & Reversing
+
+1. sort()
+
+    Sorts array alphabetically (Unicode order).
+
+    myFamily.sort();
+
+
+2. toSorted()
+
+    Returns a sorted copy, original array unchanged.
+
+    myFamily.toSorted();
+
+
+3. reverse()
+
+    Reverses array in place.
+
+    myFamily.reverse();
+
+
+4. toReversed()
+
+    Returns a reversed copy, keeps original unchanged.
+
+    myFamily.toReversed();
+
+
+# Numeric Sorting
+
+   Default sort() treats numbers as strings.
+
+   -> numbers.sort(); // wrong for numbers
+   
+   -> numbers.sort((a, b) => a - b); // correct ascending order
+
+# ✅ Key Learnings
+
+   Difference between mutable (sort, reverse) and immutable (toSorted, toReversed) methods.
+
+   How to find elements & indices efficiently in arrays.
+
+   Importance of compare functions when sorting numbers.
+
+# 📝 Key Learnings
+
+   Difference between mutable methods (sort(), reverse()) and immutable methods (toSorted(), toReversed()).
+
+   How to find first/last elements based on conditions using find, findIndex, findLast, and findLastIndex.
+
+   Why sort() needs a compare function for numerical sorting.
+
+✅ This practice improved my understanding of array searching and sorting techniques in JavaScript.
 
 
 
