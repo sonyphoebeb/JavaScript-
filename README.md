@@ -847,7 +847,7 @@ Click the buttons to see results instantly.
     -> Any iteration methods (forEach, keys, values, entries)
 
 
-##J avaScript Maps
+## JavaScript Maps
    You can create a JavaScript Map by:
     -> Passing an Array to new Map()
     -> Create a Map and use Map.set()
