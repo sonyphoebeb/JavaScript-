@@ -773,7 +773,7 @@ Click the buttons to see results instantly.
 📅 Date: 06-09-2025  
 # Day 21 – JavaScript Basics 
 
-##Basic Array Methods
+## Basic Array Methods
 1.	Array length   
 2.	Array toString()
 3.	Array at()
@@ -791,8 +791,10 @@ Click the buttons to see results instantly.
 15.	Array toSpliced()
 
 
-##JavaScript Sets
+## JavaScript Sets
+
 **Basic Set Methods
+
 1.	new Set()  //initialization
 2.	add()      //adding values
 3.	clear()    //clears entire set 
@@ -806,6 +808,7 @@ Click the buttons to see results instantly.
 11.	size     //length of a set
 
 **Logic Methods
+
 1.	union()                 //adds all the elements in 2 sets and display by removing the duplicates
 2.	difference()            //returns the elements which are not similar in only A set
 3.	intersection()         //returns the elements which are similar in both the sets
@@ -815,6 +818,7 @@ Click the buttons to see results instantly.
 7.	symmetricDifference()  //returns the elements which are not similar in both the sets
 
 **The WeakSet Object
+
 1.	A JavaScript WeakSet is a collection of values where the values must be objects.
 2.	Garbage Collection: When the value is garbage collected, its is removed from the WeakSet.
      example: // Remove the Object from memory
@@ -843,12 +847,13 @@ Click the buttons to see results instantly.
     -> Any iteration methods (forEach, keys, values, entries)
 
 
-##JavaScript Maps
+##J avaScript Maps
    You can create a JavaScript Map by:
     -> Passing an Array to new Map()
     -> Create a Map and use Map.set()
 
 **JavaScript Map Methods
+
 1.	Map.get()      // get the value of a key in a map
 2.	Map.set()      // add elements to a map
 3.	Map.size       // returns the number of elements in a map
@@ -861,6 +866,7 @@ Click the buttons to see results instantly.
 10.	Map.values()  // returns an iterator object with the values in a map
 
 **Objects as Keys
+
    example:  // Create Objects
               const apples = {name: 'Apples'};
               const bananas = {name: 'Bananas'};
@@ -878,7 +884,7 @@ Click the buttons to see results instantly.
   It groups elements of an object according to string values returned from a callback function.
 
 
-##JavaScript RegExp
+## JavaScript RegExp
 
 1. A Regular Expression is a sequence of characters that forms a search pattern.
     RegExp are be used for:
@@ -970,7 +976,7 @@ Click the buttons to see results instantly.
    
        -> /y	// Performs a "sticky" search (new 2015)
 
-10. JavaScript RegExp Objects:
+9. JavaScript RegExp Objects:
     
    RegExp is a regular expression object with predefined properties and methods.
 
@@ -981,7 +987,7 @@ Click the buttons to see results instantly.
         -> Using escape(): The RegExp.escape() method returns string where characters that belongs to the regular expression syntax are escaped, this makes it possible to treat characters like +, *, ?, ^, $, (, ), [, ], {, }, |, 
                            and \ literally, and not as part of a regular expression.
 
-12. RegExp Methods:
+10. RegExp Methods:
     
        -> compile()	// Compiles a regular expression (Deprecated)
     
@@ -1018,7 +1024,7 @@ Click the buttons to see results instantly.
        -> unicodeSets	// Returns true if the v flag is set
 
 
-##JavaScript Typed Arrays
+## JavaScript Typed Arrays
 
    -> Typed arrays was designed for handling raw binary data.
    
@@ -1041,8 +1047,8 @@ Click the buttons to see results instantly.
       -> Non-mutating methods: toReversed(), toSorted(), with().
 
    
-3.	Typed Array Methods
-4.	
+2.	Typed Array Methods
+   
       -> at()	// Returns one indexed element from a typed array
   	
       -> byteLength	// Returns the length (in bytes) of a typed array.
