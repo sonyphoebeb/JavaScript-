@@ -1339,14 +1339,6 @@ I wrote JavaScript functions for each method and connected them with buttons and
    
    -> numbers.sort((a, b) => a - b); // correct ascending order
 
-# ✅ Key Learnings
-
-   Difference between mutable (sort, reverse) and immutable (toSorted, toReversed) methods.
-
-   How to find elements & indices efficiently in arrays.
-
-   Importance of compare functions when sorting numbers.
-
 # 📝 Key Learnings
 
    Difference between mutable methods (sort(), reverse()) and immutable methods (toSorted(), toReversed()).
