@@ -1446,14 +1446,13 @@ The forEach() method executes a function for each array element.
      document.getElementById("forEachResult").innerHTML = txt;
     }
 
+    📌 Example Output:
 
-📌 Example Output:
-
-45
-4
-9
-16
-25
+    45
+    4
+    9
+    16
+    25
 
 ✅ Summary
 
