@@ -847,7 +847,7 @@ Click the buttons to see results instantly.
     -> Any iteration methods (forEach, keys, values, entries)
 
 
-## JavaScript Maps
+# JavaScript Maps
    You can create a JavaScript Map by:
     -> Passing an Array to new Map()
     -> Create a Map and use Map.set()
@@ -1194,6 +1194,7 @@ This project demonstrates the usage of basic JavaScript Array methods with simpl
     BVIT
 
 # Example Array Used
+
 var collageNames = ["RCE", "CRR", "VIT", "SRKR", "BVIT"];
    
 📅 Date: 09-09-2025  
