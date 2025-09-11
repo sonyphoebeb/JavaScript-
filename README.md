@@ -1349,6 +1349,118 @@ I wrote JavaScript functions for each method and connected them with buttons and
 
 ✅ This practice improved my understanding of array searching and sorting techniques in JavaScript.
 
+# 📅 Date: 10-09-2025  (Day 25)
+
+📘 JavaScript Practice – Array Sorting, Min/Max, Shuffle & Iteration Methods
+
+Today’s practice focused on sorting, finding min/max, shuffling arrays, and using iteration methods like forEach().
+
+🔹 Fisher–Yates Shuffle
+
+The Fisher–Yates Shuffle is a reliable algorithm to shuffle an array randomly.
+
+// Fisher-Yates Shuffle
+function fisherYatesShuffle() {
+    for (let i = numbers.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1)); // pick random index
+        [numbers[i], numbers[j]] = [numbers[j], numbers[i]]; // swap
+    }
+    document.getElementById("fisherYatesShuffleResult").innerHTML = numbers;
+}
+
+// Sample array
+let numbers = [20, 50, 10, 305, 100, 119, 90];
+
+
+📌 Example Output:
+119,10,305,90,100,20,50
+
+🔹 Find Minimum Value
+1. Using sort()
+function arrayFindMin() {
+    numbers.sort(function(a, b) { return a - b }); // ascending
+    document.getElementById("arrayFindMin").innerHTML = numbers[0];
+}
+
+
+✅ Example: Output → 10
+
+2. Using Math.min() + Spread Operator
+function arrayFindMinMath() {
+    let result = Math.min(...numbers);
+    document.getElementById("arrayFindMinMath").innerHTML = result;
+}
+
+
+✅ Example: Output → 10
+
+🔹 Find Maximum Value
+Using Math.max() + Spread Operator
+function arrayFindMax() {
+    let result = Math.max(...numbers);
+    document.getElementById("arrayFindMaxResult").innerHTML = result;
+}
+
+
+✅ Example: Output → 305
+
+🔹 Object Array Sorting
+
+Sorting an array of objects based on a property (year).
+
+const courses = [
+    { lang: "JavaScript", year: 1995 },
+    { lang: "HTML", year: 1991 },
+    { lang: "Java", year: 1995 }
+];
+
+function displayCourses() {
+    let result = courses.map(c => `${c.lang} ${c.year}`).join("<br>");
+    document.getElementById("objectArraySort").innerHTML = result;
+}
+
+// Sorting by year
+courses.sort((a, b) => a.year - b.year);
+
+
+📌 Example Output:
+
+HTML 1991
+JavaScript 1995
+Java 1995
+
+🔹 Array Iteration – forEach()
+
+The forEach() method executes a function for each array element.
+
+let nums = [45, 4, 9, 16, 25];
+
+function arrayForEach() {
+    let txt = "";
+    nums.forEach(function(value) {
+        txt += value + "<br>";
+    });
+    document.getElementById("forEachResult").innerHTML = txt;
+}
+
+
+📌 Example Output:
+
+45
+4
+9
+16
+25
+
+✅ Summary
+
+✔ Practiced min/max finding using sort(), Math.min(), and Math.max().
+
+✔ Implemented Fisher–Yates shuffle for randomizing arrays.
+
+✔ Learned to sort objects using a property.
+
+✔ Used forEach() for iterating arrays.
 
 
 
