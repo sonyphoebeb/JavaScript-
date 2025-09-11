@@ -1351,46 +1351,48 @@ I wrote JavaScript functions for each method and connected them with buttons and
 
 # 📅 Date: 10-09-2025  (Day 25)
 
-📘 JavaScript Practice – Array Sorting, Min/Max, Shuffle & Iteration Methods
+# 📘 JavaScript Practice – Array Sorting, Min/Max, Shuffle & Iteration Methods
 
 Today’s practice focused on sorting, finding min/max, shuffling arrays, and using iteration methods like forEach().
 
 🔹 Fisher–Yates Shuffle
 
-The Fisher–Yates Shuffle is a reliable algorithm to shuffle an array randomly.
+   The Fisher–Yates Shuffle is a reliable algorithm to shuffle an array randomly.
 
-// Fisher-Yates Shuffle
-function fisherYatesShuffle() {
-    for (let i = numbers.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1)); // pick random index
-        [numbers[i], numbers[j]] = [numbers[j], numbers[i]]; // swap
-    }
-    document.getElementById("fisherYatesShuffleResult").innerHTML = numbers;
-}
+         // Fisher-Yates Shuffle
+         function fisherYatesShuffle() {
+             for (let i = numbers.length - 1; i > 0; i--) {
+             let j = Math.floor(Math.random() * (i + 1)); // pick random index
+             [numbers[i], numbers[j]] = [numbers[j], numbers[i]]; // swap
+             }
+           document.getElementById("fisherYatesShuffleResult").innerHTML = numbers;
+          }
 
-// Sample array
-let numbers = [20, 50, 10, 305, 100, 119, 90];
-
+    // Sample array
+    
+    let numbers = [20, 50, 10, 305, 100, 119, 90];
 
 📌 Example Output:
+
 119,10,305,90,100,20,50
 
 🔹 Find Minimum Value
-1. Using sort()
-function arrayFindMin() {
-    numbers.sort(function(a, b) { return a - b }); // ascending
-    document.getElementById("arrayFindMin").innerHTML = numbers[0];
-}
 
+1. Using sort()
+   
+       function arrayFindMin() {
+           numbers.sort(function(a, b) { return a - b }); // ascending
+           document.getElementById("arrayFindMin").innerHTML = numbers[0];
+         }
 
 ✅ Example: Output → 10
 
 2. Using Math.min() + Spread Operator
-function arrayFindMinMath() {
-    let result = Math.min(...numbers);
-    document.getElementById("arrayFindMinMath").innerHTML = result;
-}
-
+   
+       function arrayFindMinMath() {
+           let result = Math.min(...numbers);
+           document.getElementById("arrayFindMinMath").innerHTML = result;
+        }
 
 ✅ Example: Output → 10
 
