@@ -1225,11 +1225,11 @@ Practiced Methods
 
 9. toSpliced() – New ES2023 method: returns a new array with elements spliced, original array stays unchanged.
 
-10. slice(start, end?) – Extracts a section of an array into a new array.
+10. slice(start, end?) – Extracts a section of an array into a new array
 
-   With one argument → removes from the start index till end.
+     With one argument → removes from the start index till end.
 
-   With two arguments → extracts between the given indexes.
+     With two arguments → extracts between the given indexes.
 
 # ✅ Highlights from today’s practice
 
