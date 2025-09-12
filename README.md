@@ -245,7 +245,7 @@ Practiced Arrays: creation, accessing, adding/removing elements, looping with fo
 📅 Date: 30-08-2025  
 # Day 14 – JavaScript Basics
 
-📘 JavaScript Practice – Logical Operators, Strings & Math
+📘 JavaScript Practice – Logical Operators, String methods & Math Functions
 
 🔹 1. Logical Operators in JavaScript
 
