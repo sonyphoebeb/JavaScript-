@@ -1465,6 +1465,7 @@ The forEach() method executes a function for each array element.
 
 ✔ Used forEach() for iterating arrays.
 
+
 # 📅 Date: 12-09-2025  (Day 26)
 
 # 📘 Array Iteration Methods Practice
@@ -1475,157 +1476,146 @@ Today, I practiced different Array Iteration Methods in JavaScript with examples
 
 Creates a new array by applying a function to each element.
 
-let nums = [45, 4, 9, 16, 25];
-
-let result = nums.map(value => value + 10);
-
-console.log(result); // [55, 14, 19, 26, 35]
+    let nums = [45, 4, 9, 16, 25];
+    let result = nums.map(value => value + 10);
+    console.log(result); 
+    
+    output: [55, 14, 19, 26, 35]
 
 🔹 flatMap()
 
 Maps each element, then flattens the result into a new array.
 
-let nums = [45, 4, 9];
-
-let result = nums.flatMap(x => [x, x + 20]);
-
-console.log(result); // [45, 65, 4, 24, 9, 29]
+    let nums = [45, 4, 9];
+    let result = nums.flatMap(x => [x, x + 20]);
+    console.log(result); 
+    
+    output: [45, 65, 4, 24, 9, 29]
 
 🔹 filter()
 
 Creates a new array with elements that pass a condition.
 
-let nums = [45, 4, 9, 16, 25];
-
-let result = nums.filter(value => value < 10);
-
-console.log(result); // [4, 9]
+    let nums = [45, 4, 9, 16, 25];
+    let result = nums.filter(value => value < 10);
+    console.log(result); 
+    
+    output: [4, 9]
 
 🔹 reduce()
 
 Reduces the array to a single value by applying a function.
 
-let nums = [45, 4, 9];
-
-let result = nums.reduce((total, value) => total + value);
-
-console.log(result); // 58
+    let nums = [45, 4, 9];
+    let result = nums.reduce((total, value) => total + value);
+    console.log(result); 
+    
+    output: 58
 
 
 With initial value:
 
-let result = nums.reduce((total, value) => total + value, 150);
-
-console.log(result); // 208
+    let result = nums.reduce((total, value) => total + value, 150);
+    console.log(result); 
+    
+    output: 208
 
 🔹 reduceRight()
 
 Works like reduce, but starts from the right side.
 
-let chars = ['a', 'b', 'c'];
-
-let result = chars.reduceRight((total, value) => total + value);
-
-console.log(result); // "cba"
+    let chars = ['a', 'b', 'c'];
+    let result = chars.reduceRight((total, value) => total + value);
+    console.log(result); 
+    
+    output: "cba"
 
 🔹 every()
 
 Checks if all elements pass a condition.
 
-let nums = [45, 4, 9];
-
-console.log(nums.every(value => value > 5)); // false
+    let nums = [45, 4, 9];
+    console.log(nums.every(value => value > 5)); 
+    
+    output: false
 
 🔹 some()
 
 Checks if at least one element passes a condition.
 
-let nums = [45, 4, 9];
-
-console.log(nums.some(value => value > 5)); // true
+    let nums = [45, 4, 9];
+    console.log(nums.some(value => value > 5)); 
+    
+    output: true
 
 🔹 from()
 
 Creates an array from a string or iterable.
 
-let text = "SONY";
-
-console.log(Array.from(text)); // ["S", "O", "N", "Y"]
+    let text = "SONY";
+    console.log(Array.from(text)); 
+    
+    output: ["S", "O", "N", "Y"]
 
 🔹 keys()
 
 Returns an iterator with array indexes.
 
-let companies = ["Apple", "Samsung", "Oppo"];
+    let companies = ["Apple", "Samsung", "Oppo"];
+    for (let key of companies.keys()) {
+    console.log(key);  
+    }
 
-for (let key of companies.keys()) {
-
-  console.log(key);
-  
-}
-
-// 0, 1, 2
+    output: 0, 1, 2
 
 🔹 entries()
 
 Returns an iterator with [index, value].
 
-let companies = ["Apple", "Samsung", "Oppo"];
+    let companies = ["Apple", "Samsung", "Oppo"];
+    for (let [index, value] of companies.entries()) {
+    console.log(index, value);
+    }
 
-for (let [index, value] of companies.entries()) {
-
-  console.log(index, value);
-  
-}
-// 0 Apple
-
-// 1 Samsung
-
-// 2 Oppo
+    output: 0 Apple
+            1 Samsung
+            2 Oppo
 
 🔹 with()
 
 Creates a copy of the array with a changed value at a specific index.
 
-let companies = ["Apple", "Samsung", "Oppo"];
+    let companies = ["Apple", "Samsung", "Oppo"];
+    console.log(companies.with(2, "Realme"));  
 
-console.log(companies.with(2, "Realme"));  
-
-// ["Apple", "Samsung", "Realme"]
+    output: ["Apple", "Samsung", "Realme"]
 
 🔹 Spread Operator (...)
 
 1️⃣ Merge Arrays
 
-let arr1 = [1, 2, 3];
-
-let arr2 = [4, 5, 6];
-
-let merged = [...arr1, ...arr2];
-
-console.log(merged); // [1, 2, 3, 4, 5, 6]
+    let arr1 = [1, 2, 3];
+    let arr2 = [4, 5, 6];
+    let merged = [...arr1, ...arr2];
+    console.log(merged); 
+    
+    output: [1, 2, 3, 4, 5, 6]
 
 2️⃣ Combine Multiple Arrays
 
-const q1 = ["Mon", "Tue", "Wed"];
+    const q1 = ["Mon", "Tue", "Wed"];
+    const q2 = ["Thu", "Fri"];
+    const q3 = ["Sat", "Sun"];
+    const week = [...q1, ...q2, ...q3];
+    console.log(week);
 
-const q2 = ["Thu", "Fri"];
-
-const q3 = ["Sat", "Sun"];
-
-const week = [...q1, ...q2, ...q3];
-
-console.log(week);
-
-// ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    output: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 3️⃣ Find Min/Max
 
-const numbers = [23, 55, 21, 87, 56];
-
-console.log(Math.min(...numbers)); // 21
-
-console.log(Math.max(...numbers)); // 87
+    const numbers = [23, 55, 21, 87, 56];
+    console.log(Math.min(...numbers));       output: 21
+    console.log(Math.max(...numbers));       output: 87
 
 ✅ Today’s Focus: Practiced all array iteration methods
 
