@@ -1619,4 +1619,89 @@ Creates a copy of the array with a changed value at a specific index.
 
 ✅ Today’s Focus: Practiced all array iteration methods
 
+# 📅 Date: 12-09-2025  (Day 26)
+
+# 📘 JavaScript Classes Practice Project (🍹 Beverage Manager)
+
+A simple JavaScript Classes Practice Project where you can create multiple beverages like Coffee, Tea, Juice, etc., and list their ingredients dynamically.
+
+✨ Features
+
+🆕 Add Beverages with a name and ingredients.
+
+🧾 Dynamic Ingredient Input – Enter ingredients separated by commas.
+
+📋 Display Neatly – Each beverage shows its ingredients in a <ul>.
+
+🎯 Beginner-Friendly – Clean and simple JavaScript using class.
+
+📂 Project Structure
+/project-folder
+│── index.html   # UI with form and display section
+│── class.js     # JavaScript logic with Beverage class
+│── README.md    # Project documentation
+
+💻 Code Snippets
+🔹 Beverage Class
+class Beverage {
+  constructor(name, ingredients) {
+    this.name = name;
+    this.ingredients = ingredients;
+  }
+}
+
+🔹 Add Beverage Function
+function addBeverage() {
+  let name = document.getElementById("beverageName").value;
+  let ingredientsText = document.getElementById("beverageIngredients").value;
+
+  if (name === "" || ingredientsText === "") {
+    alert("Please enter both name and ingredients!");
+    return;
+  }
+
+  let ingredients = ingredientsText.split(",");
+  let bev = new Beverage(name, ingredients);
+  beverages.push(bev);
+  showBeverages();
+}
+
+🔹 Display Beverages
+function showBeverages() {
+  let output = "";
+  beverages.forEach(b => {
+    output += `<h3>${b.name}</h3><ul>`;
+    b.ingredients.forEach(ing => {
+      output += `<li>${ing}</li>`;
+    });
+    output += "</ul>";
+  });
+  document.getElementById("beverageList").innerHTML = output;
+}
+
+🚀 How to Run
+
+Copy the project files (index.html & class.js) into a folder.
+
+Open index.html in your browser.
+
+Type a Beverage Name and Ingredients (comma-separated).
+
+Click Add Beverage ➝ It will appear in the list below.
+
+📝 Example Usage
+
+Input:
+
+Beverage Name: Coffee
+Ingredients: Milk, Coffee Powder, Sugar
+
+
+Output:
+
+Coffee
+ • Milk
+ • Coffee Powder
+ • Sugar
+
 
