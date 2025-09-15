@@ -1636,72 +1636,79 @@ A simple JavaScript Classes Practice Project where you can create multiple bever
 🎯 Beginner-Friendly – Clean and simple JavaScript using class.
 
 📂 Project Structure
+
 /project-folder
+
 │── index.html   # UI with form and display section
+
 │── class.js     # JavaScript logic with Beverage class
+
 │── README.md    # Project documentation
 
 💻 Code Snippets
+
 🔹 Beverage Class
-class Beverage {
-  constructor(name, ingredients) {
-    this.name = name;
-    this.ingredients = ingredients;
-  }
-}
+
+         class Beverage {
+            constructor(name, ingredients) {
+            this.name = name;
+            this.ingredients = ingredients;
+           }
+         }
 
 🔹 Add Beverage Function
-function addBeverage() {
-  let name = document.getElementById("beverageName").value;
-  let ingredientsText = document.getElementById("beverageIngredients").value;
 
-  if (name === "" || ingredientsText === "") {
-    alert("Please enter both name and ingredients!");
-    return;
-  }
+    function addBeverage() {
+        let name = document.getElementById("beverageName").value;
+        let ingredientsText = document.getElementById("beverageIngredients").value;
 
-  let ingredients = ingredientsText.split(",");
-  let bev = new Beverage(name, ingredients);
-  beverages.push(bev);
-  showBeverages();
-}
+        if (name === "" || ingredientsText === "") {
+        alert("Please enter both name and ingredients!");
+       return;
+     }
+
+     let ingredients = ingredientsText.split(",");
+     let bev = new Beverage(name, ingredients);
+     beverages.push(bev);
+     showBeverages();
+    }
 
 🔹 Display Beverages
-function showBeverages() {
-  let output = "";
-  beverages.forEach(b => {
-    output += `<h3>${b.name}</h3><ul>`;
-    b.ingredients.forEach(ing => {
-      output += `<li>${ing}</li>`;
-    });
-    output += "</ul>";
-  });
-  document.getElementById("beverageList").innerHTML = output;
-}
+
+    function showBeverages() {
+          let output = "";
+          beverages.forEach(b => {
+          output += `<h3>${b.name}</h3><ul>`;
+          b.ingredients.forEach(ing => {
+          output += `<li>${ing}</li>`;
+      });
+      output += "</ul>";
+     });
+     document.getElementById("beverageList").innerHTML = output;
+    }
 
 🚀 How to Run
 
-Copy the project files (index.html & class.js) into a folder.
+  Copy the project files (class.html & class.js) into a folder.
 
-Open index.html in your browser.
+  Open class.html in your browser.
 
-Type a Beverage Name and Ingredients (comma-separated).
+  Type a Beverage Name and Ingredients (comma-separated).
 
-Click Add Beverage ➝ It will appear in the list below.
+  Click Add Beverage ➝ It will appear in the list below.
 
 📝 Example Usage
 
 Input:
 
-Beverage Name: Coffee
-Ingredients: Milk, Coffee Powder, Sugar
-
+    Beverage Name: Coffee
+    Ingredients: Milk, Coffee Powder, Sugar
 
 Output:
 
-Coffee
- • Milk
- • Coffee Powder
- • Sugar
+    Coffee
+    • Milk
+    • Coffee Powder
+    • Sugar
 
 
