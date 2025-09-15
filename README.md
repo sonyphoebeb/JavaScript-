@@ -1639,11 +1639,9 @@ A simple JavaScript Classes Practice Project where you can create multiple bever
 
 /project-folder
 
-│── index.html   # UI with form and display section
+│── class.html   # UI with form and display section
 
 │── class.js     # JavaScript logic with Beverage class
-
-│── README.md    # Project documentation
 
 💻 Code Snippets
 
