@@ -1631,7 +1631,7 @@ A simple JavaScript Classes Practice Project where you can create multiple bever
 
 🧾 Dynamic Ingredient Input – Enter ingredients separated by commas.
 
-📋 Display Neatly – Each beverage shows its ingredients in a <ul>.
+📋 Display Neatly – Each beverage shows its ingredients in a ul.
 
 🎯 Beginner-Friendly – Clean and simple JavaScript using class.
 
