@@ -1710,13 +1710,13 @@ Output:
     • Sugar
 
 
-# 📅 Date: 16-09-2025  (Day 30)
+<h2> 📅 Date: 16-09-2025  (Day 30) </h2> 
 
 # 📘 JavaScript Classes – Inheritance & Static Methods Practice
 
 This repo contains hands-on JavaScript class examples practicing Inheritance and Static methods with simple UI (HTML + JS).
 
-# 🌱 Inheritance Example – Trees & Plants
+<h2>🌱 Inheritance Example – Trees & Plants</h2> 
 
 📄 inheritance.html
 
