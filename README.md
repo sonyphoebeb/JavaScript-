@@ -1717,104 +1717,109 @@ Output:
 This repo contains hands-on JavaScript class examples practicing Inheritance and Static methods with simple UI (HTML + JS).
 
 🌱 Inheritance Example – Trees & Plants
-📄 index.html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Inheritance Practice</title>
-  <script src="inheritance.js" defer></script>
-</head>
-<body>
-  <h1>🌱 Inheritance Practice – Trees & Plants</h1>
 
-  <button onclick="showTree()">🌳 Show Tree</button>
-  <p id="treeResult"></p>
+📄 inheritance.html
 
-  <button onclick="showPlant()">🌼 Show Plant</button>
-  <p id="plantResult"></p>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Inheritance Practice</title>
+    <script src="inheritance.js" defer></script>
+    </head>
+    <body>
+    <h1>🌱 Inheritance Practice – Trees & Plants</h1>
+
+     <button onclick="showTree()">🌳 Show Tree</button>
+     <p id="treeResult"></p>
+
+     <button onclick="showPlant()">🌼 Show Plant</button>
+     <p id="plantResult"></p>
+    </body>
+    </html>
 
 📄 inheritance.js
-// Parent class
-class Tree {
-  constructor(name, height) {
+
+    // Parent class
+    class Tree {
+    constructor(name, height) {
     this.name = name;
     this.height = height;
-  }
+     }
 
-  details() {
+    details() {
     return `${this.name} tree is ${this.height} feet tall.`;
-  }
-}
+    }
+    }
 
-// Child class
-class Plant extends Tree {
-  constructor(name, height, type) {
-    super(name, height);  // reuse Tree constructor
-    this.type = type;
-  }
+    // Child class
+     class Plant extends Tree {
+      constructor(name, height, type) {
+      super(name, height);  // reuse Tree constructor
+      this.type = type;
+     }
 
-  details() {
-    return `${super.details()} 🌿 It is a ${this.type} plant.`;
-  }
-}
+      details() {
+      return `${super.details()} 🌿 It is a ${this.type} plant.`;
+     }
+    }
 
-// UI functions
-function showTree() {
-  let mango = new Tree("Mango", 25);
-  document.getElementById("treeResult").innerHTML = mango.details();
-}
+    // UI functions
+     function showTree() {
+     let mango = new Tree("Mango", 25);
+     document.getElementById("treeResult").innerHTML = mango.details();
+    }
 
-function showPlant() {
-  let rose = new Plant("Rose", 2, "Flowering");
-  document.getElementById("plantResult").innerHTML = rose.details();
-}
-
+    function showPlant() {
+    let rose = new Plant("Rose", 2, "Flowering");
+     document.getElementById("plantResult").innerHTML = rose.details();
+    }
 
 ✅ Demonstrates:
 
-class inheritance with extends
+-> class inheritance with extends
 
-super() call for reusing parent constructor
-
-Specialized child class with extra property
+-> super() call for reusing parent constructor
+  
+-> Specialized child class with extra property
 
 ⚡ Static Methods Example – Math Utility
-📄 index.html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Static Methods Practice</title>
-  <script src="staticExample.js" defer></script>
-</head>
-<body>
-  <h1>⚡ Static Methods Practice</h1>
 
-  <label>Enter First Number:</label>
-  <input type="number" id="num1"><br><br>
+📄 static.html
 
-  <label>Enter Second Number:</label>
-  <input type="number" id="num2"><br><br>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Static Methods Practice</title>
+    <script src="static.js" defer></script>
+    </head>
+    <body>
+    <h1>⚡ Static Methods Practice</h1>
 
-  <button onclick="useAdd()">➕ Add</button>
-  <p id="addResult"></p>
+    <label>Enter First Number:</label>
+    <input type="number" id="num1"><br><br>
 
-  <button onclick="useMultiply()">✖ Multiply</button>
-  <p id="multiplyResult"></p>
+    <label>Enter Second Number:</label>
+    <input type="number" id="num2"><br><br>
 
-  <button onclick="useSubtract()">➖ Subtract</button>
-  <p id="subtractResult"></p>
+    <button onclick="useAdd()">➕ Add</button>
+    <p id="addResult"></p>
 
-  <button onclick="useDivide()">➗ Divide</button>
-  <p id="divideResult"></p>
+    <button onclick="useMultiply()">✖ Multiply</button>
+    <p id="multiplyResult"></p>
 
-  <button onclick="showPI()">🔵 Show PI</button>
-  <p id="piResult"></p>
-</body>
-</html>
+    <button onclick="useSubtract()">➖ Subtract</button>
+    <p id="subtractResult"></p>
 
-📄 staticExample.js
+    <button onclick="useDivide()">➗ Divide</button>
+    <p id="divideResult"></p>
+
+    <button onclick="showPI()">🔵 Show PI</button>
+    <p id="piResult"></p>
+    </body>
+    </html>
+
+📄 static.js
+
 class MathUtil {
   static PI = 3.14159;
 
@@ -1867,19 +1872,19 @@ function showPI() {
 
 ✅ Demonstrates:
 
-static keyword (methods & properties used without object creation)
+-> static keyword (methods & properties used without object creation)
 
-Dynamic inputs from user
+-> Dynamic inputs from user
 
-Reusable utility class
+-> Reusable utility class
 
 📚 Topics Practiced
 
-JavaScript Classes
+-> JavaScript Classes
 
-Inheritance (Tree → Plant)
+-> Inheritance (Tree → Plant)
 
-Static properties & methods
+-> Static properties & methods
 
-DOM + JS integration with buttons & input
+-> DOM + JS integration with buttons & input
 
