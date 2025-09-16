@@ -1782,7 +1782,7 @@ This repo contains hands-on JavaScript class examples practicing Inheritance and
   
 -> Specialized child class with extra property
 
-# ⚡ Static Methods Example – Math Utility
+<h2>⚡ Static Methods Example – Math Utility </h2>
 
 📄 static.html
 
