@@ -1716,7 +1716,7 @@ Output:
 
 This repo contains hands-on JavaScript class examples practicing Inheritance and Static methods with simple UI (HTML + JS).
 
-🏗️ Inheritance Example
+🌱 Inheritance Example – Trees & Plants
 📄 index.html
 <!DOCTYPE html>
 <html>
@@ -1725,62 +1725,50 @@ This repo contains hands-on JavaScript class examples practicing Inheritance and
   <script src="inheritance.js" defer></script>
 </head>
 <body>
-  <h1>🧬 Inheritance Practice</h1>
+  <h1>🌱 Inheritance Practice – Trees & Plants</h1>
 
-  <button onclick="showBirdDetails()">🦜 Show Bird</button>
-  <p id="birdResult"></p>
+  <button onclick="showTree()">🌳 Show Tree</button>
+  <p id="treeResult"></p>
 
-  <button onclick="showDogDetails()">🐶 Show Dog</button>
-  <p id="dogResult"></p>
+  <button onclick="showPlant()">🌼 Show Plant</button>
+  <p id="plantResult"></p>
 </body>
 </html>
 
 📄 inheritance.js
 // Parent class
-class Animal {
-  constructor(name, sound) {
+class Tree {
+  constructor(name, height) {
     this.name = name;
-    this.sound = sound;
-  }
-
-  speak() {
-    return `${this.name} makes a sound: ${this.sound}`;
-  }
-}
-
-// Child class Bird
-class Bird extends Animal {
-  constructor(name, sound, canFly) {
-    super(name, sound);
-    this.canFly = canFly;
+    this.height = height;
   }
 
   details() {
-    return `${this.speak()} | Can fly: ${this.canFly}`;
+    return `${this.name} tree is ${this.height} feet tall.`;
   }
 }
 
-// Child class Dog
-class Dog extends Animal {
-  constructor(name, sound, breed) {
-    super(name, sound);
-    this.breed = breed;
+// Child class
+class Plant extends Tree {
+  constructor(name, height, type) {
+    super(name, height);  // reuse Tree constructor
+    this.type = type;
   }
 
   details() {
-    return `${this.speak()} | Breed: ${this.breed}`;
+    return `${super.details()} 🌿 It is a ${this.type} plant.`;
   }
 }
 
 // UI functions
-function showBirdDetails() {
-  let parrot = new Bird("Parrot", "Chirp", true);
-  document.getElementById("birdResult").innerHTML = parrot.details();
+function showTree() {
+  let mango = new Tree("Mango", 25);
+  document.getElementById("treeResult").innerHTML = mango.details();
 }
 
-function showDogDetails() {
-  let lab = new Dog("Buddy", "Woof", "Labrador");
-  document.getElementById("dogResult").innerHTML = lab.details();
+function showPlant() {
+  let rose = new Plant("Rose", 2, "Flowering");
+  document.getElementById("plantResult").innerHTML = rose.details();
 }
 
 
@@ -1788,11 +1776,11 @@ function showDogDetails() {
 
 class inheritance with extends
 
-super() call to reuse parent constructor
+super() call for reusing parent constructor
 
-Specialized child methods
+Specialized child class with extra property
 
-⚡ Static Methods Example
+⚡ Static Methods Example – Math Utility
 📄 index.html
 <!DOCTYPE html>
 <html>
@@ -1879,9 +1867,9 @@ function showPI() {
 
 ✅ Demonstrates:
 
-static keyword (methods can be called without creating object)
+static keyword (methods & properties used without object creation)
 
-Parameters passed dynamically from user input
+Dynamic inputs from user
 
 Reusable utility class
 
@@ -1889,12 +1877,9 @@ Reusable utility class
 
 JavaScript Classes
 
-Inheritance (extends, super)
+Inheritance (Tree → Plant)
 
 Static properties & methods
 
-DOM + JS integration with buttons and inputs
-
-🚀 This practice helps in understanding OOP concepts in JavaScript (Inheritance, Encapsulation, and Utility classes).
-
+DOM + JS integration with buttons & input
 
