@@ -1619,7 +1619,7 @@ Creates a copy of the array with a changed value at a specific index.
 
 ✅ Today’s Focus: Practiced all array iteration methods
 
-# 📅 Date: 12-09-2025  (Day 26)
+# 📅 Date: 15-09-2025  (Day 26)
 
 # 📘 JavaScript Classes Practice Project (🍹 Beverage Manager)
 
@@ -1708,5 +1708,193 @@ Output:
     • Milk
     • Coffee Powder
     • Sugar
+
+
+# 📅 Date: 16-09-2025  (Day 30)
+
+# 📘 JavaScript Classes – Inheritance & Static Methods Practice
+
+This repo contains hands-on JavaScript class examples practicing Inheritance and Static methods with simple UI (HTML + JS).
+
+🏗️ Inheritance Example
+📄 index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inheritance Practice</title>
+  <script src="inheritance.js" defer></script>
+</head>
+<body>
+  <h1>🧬 Inheritance Practice</h1>
+
+  <button onclick="showBirdDetails()">🦜 Show Bird</button>
+  <p id="birdResult"></p>
+
+  <button onclick="showDogDetails()">🐶 Show Dog</button>
+  <p id="dogResult"></p>
+</body>
+</html>
+
+📄 inheritance.js
+// Parent class
+class Animal {
+  constructor(name, sound) {
+    this.name = name;
+    this.sound = sound;
+  }
+
+  speak() {
+    return `${this.name} makes a sound: ${this.sound}`;
+  }
+}
+
+// Child class Bird
+class Bird extends Animal {
+  constructor(name, sound, canFly) {
+    super(name, sound);
+    this.canFly = canFly;
+  }
+
+  details() {
+    return `${this.speak()} | Can fly: ${this.canFly}`;
+  }
+}
+
+// Child class Dog
+class Dog extends Animal {
+  constructor(name, sound, breed) {
+    super(name, sound);
+    this.breed = breed;
+  }
+
+  details() {
+    return `${this.speak()} | Breed: ${this.breed}`;
+  }
+}
+
+// UI functions
+function showBirdDetails() {
+  let parrot = new Bird("Parrot", "Chirp", true);
+  document.getElementById("birdResult").innerHTML = parrot.details();
+}
+
+function showDogDetails() {
+  let lab = new Dog("Buddy", "Woof", "Labrador");
+  document.getElementById("dogResult").innerHTML = lab.details();
+}
+
+
+✅ Demonstrates:
+
+class inheritance with extends
+
+super() call to reuse parent constructor
+
+Specialized child methods
+
+⚡ Static Methods Example
+📄 index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Static Methods Practice</title>
+  <script src="staticExample.js" defer></script>
+</head>
+<body>
+  <h1>⚡ Static Methods Practice</h1>
+
+  <label>Enter First Number:</label>
+  <input type="number" id="num1"><br><br>
+
+  <label>Enter Second Number:</label>
+  <input type="number" id="num2"><br><br>
+
+  <button onclick="useAdd()">➕ Add</button>
+  <p id="addResult"></p>
+
+  <button onclick="useMultiply()">✖ Multiply</button>
+  <p id="multiplyResult"></p>
+
+  <button onclick="useSubtract()">➖ Subtract</button>
+  <p id="subtractResult"></p>
+
+  <button onclick="useDivide()">➗ Divide</button>
+  <p id="divideResult"></p>
+
+  <button onclick="showPI()">🔵 Show PI</button>
+  <p id="piResult"></p>
+</body>
+</html>
+
+📄 staticExample.js
+class MathUtil {
+  static PI = 3.14159;
+
+  static add(a, b) {
+    return a + b;
+  }
+
+  static multiply(a, b) {
+    return a * b;
+  }
+
+  static subtract(a, b) {
+    return a - b;
+  }
+
+  static divide(a, b) {
+    if (b === 0) return "⚠ Cannot divide by zero!";
+    return a / b;
+  }
+}
+
+// helper
+function getInputs() {
+  let a = parseFloat(document.getElementById("num1").value);
+  let b = parseFloat(document.getElementById("num2").value);
+  return { a, b };
+}
+
+// UI button functions
+function useAdd() {
+  let { a, b } = getInputs();
+  document.getElementById("addResult").innerHTML = "Result: " + MathUtil.add(a, b);
+}
+function useMultiply() {
+  let { a, b } = getInputs();
+  document.getElementById("multiplyResult").innerHTML = "Result: " + MathUtil.multiply(a, b);
+}
+function useSubtract() {
+  let { a, b } = getInputs();
+  document.getElementById("subtractResult").innerHTML = "Result: " + MathUtil.subtract(a, b);
+}
+function useDivide() {
+  let { a, b } = getInputs();
+  document.getElementById("divideResult").innerHTML = "Result: " + MathUtil.divide(a, b);
+}
+function showPI() {
+  document.getElementById("piResult").innerHTML = "Value of PI: " + MathUtil.PI;
+}
+
+
+✅ Demonstrates:
+
+static keyword (methods can be called without creating object)
+
+Parameters passed dynamically from user input
+
+Reusable utility class
+
+📚 Topics Practiced
+
+JavaScript Classes
+
+Inheritance (extends, super)
+
+Static properties & methods
+
+DOM + JS integration with buttons and inputs
+
+🚀 This practice helps in understanding OOP concepts in JavaScript (Inheritance, Encapsulation, and Utility classes).
 
 
