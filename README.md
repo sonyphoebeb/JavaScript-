@@ -1877,7 +1877,7 @@ This repo contains hands-on JavaScript class examples practicing Inheritance and
 
 -> Reusable utility class
 
-# 📚 Topics Practiced
+<h2> 📚 Topics Practiced </h2>
 
 -> JavaScript Classes
 
