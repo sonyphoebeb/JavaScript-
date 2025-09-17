@@ -1893,7 +1893,7 @@ This repo contains hands-on JavaScript class examples practicing Inheritance and
 
 This project contains simple loop practice examples implemented using HTML, CSS, and JavaScript.
 
-<h3>📌 Topics Covered</h3> 
+<h2>📌 Topics Covered</h2> 
 
 1. for loop
 
@@ -1907,7 +1907,7 @@ This project contains simple loop practice examples implemented using HTML, CSS,
    
 6. Map
 
-📝 Examples
+<h2>📝 Examples</h2>
 
 1️⃣ For Loop
 
