@@ -1887,3 +1887,104 @@ This repo contains hands-on JavaScript class examples practicing Inheritance and
 
 -> DOM + JS integration with buttons & input
 
+<h2> 📅 Date: 17-09-2025  (Day 31) </h2> 
+
+# 🔄 Loops Practice – HTML, CSS & JavaScript
+
+This project contains simple loop practice examples implemented using HTML, CSS, and JavaScript.
+
+📌 Topics Covered
+
+for loop
+
+while loop
+
+do...while loop
+
+for...in loop
+
+for...of loop
+
+📝 Examples
+1️⃣ For Loop
+
+Repeats a block of code a fixed number of times.
+
+function forLoop() {
+  let result = "";
+  for (let i = 1; i <= 5; i++) {
+    result += "Iteration: " + i + "<br>";
+  }
+  document.getElementById("forLoopResult").innerHTML = result;
+}
+
+2️⃣ While Loop
+
+Executes a block while the condition is true.
+
+function whileLoop() {
+  let i = 1;
+  let result = "";
+  while (i <= 5) {
+    result += "Step: " + i + "<br>";
+    i++;
+  }
+  document.getElementById("whileLoopResult").innerHTML = result;
+}
+
+3️⃣ Do...While Loop
+
+Runs the code at least once, then repeats while the condition is true.
+
+function doWhileLoop() {
+  let i = 1;
+  let result = "";
+  do {
+    result += "Count: " + i + "<br>";
+    i++;
+  } while (i <= 5);
+  document.getElementById("doWhileLoopResult").innerHTML = result;
+}
+
+4️⃣ For...In Loop
+
+Iterates over the keys of an object.
+
+function forInLoop() {
+  let person = { name: "Alex", age: 25, country: "India" };
+  let result = "";
+  for (let key in person) {
+    result += key + ": " + person[key] + "<br>";
+  }
+  document.getElementById("forInLoopResult").innerHTML = result;
+}
+
+5️⃣ For...Of Loop
+
+Iterates over the values of an iterable (like arrays or strings).
+
+function forOfLoop() {
+  let colors = ["Red", "Green", "Blue"];
+  let result = "";
+  for (let color of colors) {
+    result += color + "<br>";
+  }
+  document.getElementById("forOfLoopResult").innerHTML = result;
+}
+
+🎨 HTML & CSS
+
+HTML → Buttons to trigger each loop function and placeholders (<p>) to display results.
+
+CSS → Basic styling to keep layout clean and results readable.
+
+🚀 How to Run
+
+Open the index.html file in your browser.
+
+Click on the buttons for each loop type.
+
+Results will be displayed below the buttons.
+
+
+
