@@ -1893,84 +1893,87 @@ This repo contains hands-on JavaScript class examples practicing Inheritance and
 
 This project contains simple loop practice examples implemented using HTML, CSS, and JavaScript.
 
-📌 Topics Covered
+<h3>📌 Topics Covered</h3> 
 
-for loop
+1. for loop
 
-while loop
+2. while loop
 
-do...while loop
+3. do...while loop
 
-for...in loop
+4. for...in loop
 
-for...of loop
+5. for...of loop
+   
+6. Map
 
 📝 Examples
+
 1️⃣ For Loop
 
 Repeats a block of code a fixed number of times.
 
-function forLoop() {
-  let result = "";
-  for (let i = 1; i <= 5; i++) {
-    result += "Iteration: " + i + "<br>";
-  }
-  document.getElementById("forLoopResult").innerHTML = result;
-}
+    function forLoop() {
+        let result = "";
+        for (let i = 1; i <= 5; i++) {
+           result += "Iteration: " + i + "<br>";
+       }
+       document.getElementById("forLoopResult").innerHTML = result;
+    }
 
 2️⃣ While Loop
 
 Executes a block while the condition is true.
 
-function whileLoop() {
-  let i = 1;
-  let result = "";
-  while (i <= 5) {
-    result += "Step: " + i + "<br>";
-    i++;
-  }
-  document.getElementById("whileLoopResult").innerHTML = result;
-}
+     function whileLoop() {
+        let i = 1;
+        let result = "";
+        while (i <= 5) {
+          result += "Step: " + i + "<br>";
+          i++;
+      }
+      document.getElementById("whileLoopResult").innerHTML = result;
+    }
 
 3️⃣ Do...While Loop
 
 Runs the code at least once, then repeats while the condition is true.
 
-function doWhileLoop() {
-  let i = 1;
-  let result = "";
-  do {
-    result += "Count: " + i + "<br>";
-    i++;
-  } while (i <= 5);
-  document.getElementById("doWhileLoopResult").innerHTML = result;
-}
+    function doWhileLoop() {
+         let i = 1;
+         let result = "";
+         do {
+              result += "Count: " + i + "<br>";
+              i++;
+         } while (i <= 5);
+         document.getElementById("doWhileLoopResult").innerHTML = result;
+     }
 
 4️⃣ For...In Loop
 
 Iterates over the keys of an object.
 
-function forInLoop() {
-  let person = { name: "Alex", age: 25, country: "India" };
-  let result = "";
-  for (let key in person) {
-    result += key + ": " + person[key] + "<br>";
-  }
-  document.getElementById("forInLoopResult").innerHTML = result;
-}
+    function forInLoop() {
+       let person = { name: "Alex", age: 25, country: "India" };
+       let result = "";
+       for (let key in person) {
+       result += key + ": " + person[key] + "<br>";
+     }
+    document.getElementById("forInLoopResult").innerHTML = result;
+    }
 
 5️⃣ For...Of Loop
 
 Iterates over the values of an iterable (like arrays or strings).
 
-function forOfLoop() {
-  let colors = ["Red", "Green", "Blue"];
-  let result = "";
-  for (let color of colors) {
-    result += color + "<br>";
-  }
-  document.getElementById("forOfLoopResult").innerHTML = result;
-}
+    function forOfLoop() {
+       let colors = ["Red", "Green", "Blue"];
+       let result = "";
+       for (let color of colors) {
+         result += color + "<br>";
+      }
+      document.getElementById("forOfLoopResult").innerHTML = result;
+    }
 
 🎨 HTML & CSS
 
