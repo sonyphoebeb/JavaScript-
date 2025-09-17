@@ -1975,13 +1975,13 @@ Iterates over the values of an iterable (like arrays or strings).
       document.getElementById("forOfLoopResult").innerHTML = result;
     }
 
-🎨 HTML & CSS
+<h2>🎨 HTML & CSS</h2>
 
 HTML → Buttons to trigger each loop function and placeholders (<p>) to display results.
 
 CSS → Basic styling to keep layout clean and results readable.
 
-🚀 How to Run
+<h2>🚀 How to Run</h2>
 
 Open the index.html file in your browser.
 
