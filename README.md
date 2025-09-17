@@ -1979,11 +1979,11 @@ Iterates over the values of an iterable (like arrays or strings).
 
 Creates a new array by applying a function to each element of an existing array.
 
-function mapMethod() {
-  let numbers = [1, 2, 3, 4, 5];
-  let doubled = numbers.map(num => num * 2);
-  document.getElementById("mapResult").innerHTML = doubled.join(", ");
-}
+    function mapMethod() {
+        let numbers = [1, 2, 3, 4, 5];
+        let doubled = numbers.map(num => num * 2);
+        document.getElementById("mapResult").innerHTML = doubled.join(", ");
+     }
 
 <h2>🎨 HTML & CSS</h2>
 
