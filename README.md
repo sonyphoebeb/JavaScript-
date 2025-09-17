@@ -1987,7 +1987,7 @@ Creates a new array by applying a function to each element of an existing array.
 
 <h2>🎨 HTML & CSS</h2>
 
-HTML → Buttons to trigger each loop function and placeholders (<p>) to display results.
+HTML → Buttons to trigger each loop function and placeholders < p > to display results.
 
 CSS → Basic styling to keep layout clean and results readable.
 
