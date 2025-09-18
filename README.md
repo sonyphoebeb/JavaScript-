@@ -2106,7 +2106,7 @@ loopsExtended.css → Styling for buttons, layout, and result blocks
 
 ✅ Comparison of for, for..of, and forEach.
 
-🎨 Styling with CSS
+<h2>🎨 Styling with CSS</h2>
 
 Each result block has its own unique background color and border for better readability.
 
@@ -2117,7 +2117,7 @@ Example:
      border-left: 4px solid #0077cc;
     }
 
-🚀 How to Run
+<h2>🚀 How to Run</h2>
 
 -> Clone the repository
 
