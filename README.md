@@ -2049,83 +2049,79 @@ loopsExtended.css → Styling for buttons, layout, and result blocks
 
 3️⃣ Array Loop with Condition
 
-function arrayCondition() {
-  let nums = [5, 12, 8, 20, 7];
-  let result = "";
-  for (let n of nums) {
-    if (n > 10) {
+    function arrayCondition() {
+     let nums = [5, 12, 8, 20, 7];
+     let result = "";
+     for (let n of nums) {
+     if (n > 10) {
       result += `${n} is greater than 10<br>`;
     }
-  }
-  document.getElementById("arrayConditionResult").innerHTML = result;
-}
-
+    }
+    document.getElementById("arrayConditionResult").innerHTML = result;
+    }
 
 ✅ Filtering array values using loops.
 
 4️⃣ Loop Through Object
-function objectLoop() {
-  let person = { name: "Sony", age: 23, country: "India" };
-  let result = "";
-  for (let key in person) {
-    result += `${key}: ${person[key]}<br>`;
-  }
-  document.getElementById("objectLoopResult").innerHTML = result;
-}
 
+    function objectLoop() {
+     let person = { name: "Sony", age: 23, country: "India" };
+     let result = "";
+     for (let key in person) {
+     result += `${key}: ${person[key]}<br>`;
+    }
+    document.getElementById("objectLoopResult").innerHTML = result;
+    }
 
 ✅ Iterating over object keys.
 
 5️⃣ DOM Manipulation with Loops
-function domLoop() {
-  let fruits = ["🍎 Apple", "🍌 Banana", "🍊 Orange"];
-  let output = "";
-  for (let fruit of fruits) {
-    output += `<li>${fruit}</li>`;
-  }
-  document.getElementById("domLoopResult").innerHTML = output;
-}
 
+    function domLoop() {
+    let fruits = ["🍎 Apple", "🍌 Banana", "🍊 Orange"];
+    let output = "";
+    for (let fruit of fruits) {
+    output += `<li>${fruit}</li>`;
+     }
+    document.getElementById("domLoopResult").innerHTML = output;
+    }
 
 ✅ Creates dynamic list items with loop.
 
 6️⃣ Compare Loops
-function compareLoops() {
-  let nums = [1, 2, 3, 4];
-  let result = "For Loop:<br>";
-  for (let i = 0; i < nums.length; i++) result += nums[i] + " ";
 
-  result += "<br><br>For..of:<br>";
-  for (let n of nums) result += n + " ";
+    function compareLoops() {
+      let nums = [1, 2, 3, 4];
+      let result = "For Loop:<br>";
+      for (let i = 0; i < nums.length; i++) result += nums[i] + " ";
 
-  result += "<br><br>ForEach:<br>";
-  nums.forEach(n => result += n + " ");
+     result += "<br><br>For..of:<br>";
+     for (let n of nums) result += n + " ";
 
-  document.getElementById("compareLoopsResult").innerHTML = result;
-}
+     result += "<br><br>ForEach:<br>";
+     nums.forEach(n => result += n + " ");
 
+    document.getElementById("compareLoopsResult").innerHTML = result;
+    }
 
 ✅ Comparison of for, for..of, and forEach.
 
 🎨 Styling with CSS
 
 Each result block has its own unique background color and border for better readability.
+
 Example:
 
-#nestedLoopsResult {
-  background: #e6f7ff;   /* Light Blue */
-  border-left: 4px solid #0077cc;
-}
-
-📸 Screenshots
-
-(Add your screenshots here after running the code)
+     #nestedLoopsResult {
+     background: #e6f7ff;   /* Light Blue */
+     border-left: 4px solid #0077cc;
+    }
 
 🚀 How to Run
 
-Clone the repository
+-> Clone the repository
 
-Open loopsExtended.html in a browser
+-> Open loopsExtended.html in a browser
 
-Click the buttons to see results
+-> Click the buttons to see results
 
