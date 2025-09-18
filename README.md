@@ -1887,6 +1887,7 @@ This repo contains hands-on JavaScript class examples practicing Inheritance and
 
 -> DOM + JS integration with buttons & input
 
+
 <h2> 📅 Date: 17-09-2025  (Day 31) </h2> 
 
 # 🔄 Loops Practice – HTML, CSS & JavaScript
@@ -2000,4 +2001,128 @@ Click on the buttons for each loop type.
 Results will be displayed below the buttons.
 
 
+<h2> 📅 Date: 18-09-2025  (Day 32) </h2> 
+
+# 🔁 JavaScript Loops Practice (Extended with CSS)
+
+This project demonstrates different kinds of JavaScript loops, including nested loops, loop control (break & continue), array/object iterations, DOM manipulations with loops, and loop comparisons.
+The output is styled with CSS so that each section has its own distinct color for clarity. 🎨
+
+📂 Files
+
+loopsExtended.html → HTML structure with buttons & result containers
+
+loopsExtended.js → JavaScript functions demonstrating loop examples
+
+loopsExtended.css → Styling for buttons, layout, and result blocks
+
+🧑‍💻 Practiced Loops
+1️⃣ Nested Loops
+function nestedLoops() {
+  let result = "";
+  for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+      result += `i=${i}, j=${j}<br>`;
+    }
+  }
+  document.getElementById("nestedLoopsResult").innerHTML = result;
+}
+
+
+✅ Demonstrates loops inside loops.
+
+2️⃣ Break & Continue
+function breakContinue() {
+  let result = "";
+  for (let i = 1; i <= 10; i++) {
+    if (i === 5) continue; // skip 5
+    if (i === 8) break;    // stop loop at 8
+    result += `Number: ${i}<br>`;
+  }
+  document.getElementById("breakContinueResult").innerHTML = result;
+}
+
+
+✅ Shows how to skip or stop iterations.
+
+3️⃣ Array Loop with Condition
+function arrayCondition() {
+  let nums = [5, 12, 8, 20, 7];
+  let result = "";
+  for (let n of nums) {
+    if (n > 10) {
+      result += `${n} is greater than 10<br>`;
+    }
+  }
+  document.getElementById("arrayConditionResult").innerHTML = result;
+}
+
+
+✅ Filtering array values using loops.
+
+4️⃣ Loop Through Object
+function objectLoop() {
+  let person = { name: "Sony", age: 23, country: "India" };
+  let result = "";
+  for (let key in person) {
+    result += `${key}: ${person[key]}<br>`;
+  }
+  document.getElementById("objectLoopResult").innerHTML = result;
+}
+
+
+✅ Iterating over object keys.
+
+5️⃣ DOM Manipulation with Loops
+function domLoop() {
+  let fruits = ["🍎 Apple", "🍌 Banana", "🍊 Orange"];
+  let output = "";
+  for (let fruit of fruits) {
+    output += `<li>${fruit}</li>`;
+  }
+  document.getElementById("domLoopResult").innerHTML = output;
+}
+
+
+✅ Creates dynamic list items with loop.
+
+6️⃣ Compare Loops
+function compareLoops() {
+  let nums = [1, 2, 3, 4];
+  let result = "For Loop:<br>";
+  for (let i = 0; i < nums.length; i++) result += nums[i] + " ";
+
+  result += "<br><br>For..of:<br>";
+  for (let n of nums) result += n + " ";
+
+  result += "<br><br>ForEach:<br>";
+  nums.forEach(n => result += n + " ");
+
+  document.getElementById("compareLoopsResult").innerHTML = result;
+}
+
+
+✅ Comparison of for, for..of, and forEach.
+
+🎨 Styling with CSS
+
+Each result block has its own unique background color and border for better readability.
+Example:
+
+#nestedLoopsResult {
+  background: #e6f7ff;   /* Light Blue */
+  border-left: 4px solid #0077cc;
+}
+
+📸 Screenshots
+
+(Add your screenshots here after running the code)
+
+🚀 How to Run
+
+Clone the repository
+
+Open loopsExtended.html in a browser
+
+Click the buttons to see results
 
