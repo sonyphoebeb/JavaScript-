@@ -2006,6 +2006,7 @@ Results will be displayed below the buttons.
 # 🔁 JavaScript Loops Practice (Extended with CSS)
 
 This project demonstrates different kinds of JavaScript loops, including nested loops, loop control (break & continue), array/object iterations, DOM manipulations with loops, and loop comparisons.
+
 The output is styled with CSS so that each section has its own distinct color for clarity. 🎨
 
 📂 Files
@@ -2016,36 +2017,38 @@ loopsExtended.js → JavaScript functions demonstrating loop examples
 
 loopsExtended.css → Styling for buttons, layout, and result blocks
 
-🧑‍💻 Practiced Loops
-1️⃣ Nested Loops
-function nestedLoops() {
-  let result = "";
-  for (let i = 1; i <= 3; i++) {
-    for (let j = 1; j <= 3; j++) {
-      result += `i=${i}, j=${j}<br>`;
-    }
-  }
-  document.getElementById("nestedLoopsResult").innerHTML = result;
-}
+# 🧑‍💻 Practiced Loops
 
+1️⃣ Nested Loops
+
+    function nestedLoops() {
+       let result = "";
+       for (let i = 1; i <= 3; i++) {
+       for (let j = 1; j <= 3; j++) {
+        result += `i=${i}, j=${j}<br>`;
+      }
+    }
+    document.getElementById("nestedLoopsResult").innerHTML = result;
+  }
 
 ✅ Demonstrates loops inside loops.
 
 2️⃣ Break & Continue
-function breakContinue() {
-  let result = "";
-  for (let i = 1; i <= 10; i++) {
-    if (i === 5) continue; // skip 5
-    if (i === 8) break;    // stop loop at 8
-    result += `Number: ${i}<br>`;
-  }
-  document.getElementById("breakContinueResult").innerHTML = result;
-}
 
+    function breakContinue() {
+     let result = "";
+     for (let i = 1; i <= 10; i++) {
+     if (i === 5) continue; // skip 5
+     if (i === 8) break;    // stop loop at 8
+     result += `Number: ${i}<br>`;
+    }
+    document.getElementById("breakContinueResult").innerHTML = result;
+    }
 
 ✅ Shows how to skip or stop iterations.
 
 3️⃣ Array Loop with Condition
+
 function arrayCondition() {
   let nums = [5, 12, 8, 20, 7];
   let result = "";
