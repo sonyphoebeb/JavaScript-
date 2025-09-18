@@ -2017,7 +2017,7 @@ loopsExtended.js → JavaScript functions demonstrating loop examples
 
 loopsExtended.css → Styling for buttons, layout, and result blocks
 
-# 🧑‍💻 Practiced Loops
+<h2>🧑‍💻 Practiced Loops</h2>
 
 1️⃣ Nested Loops
 
