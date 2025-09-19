@@ -2139,7 +2139,8 @@ Each method has its own input field, label, and button, so even beginners can un
  ┣ 📄 style.css    → Styling for layout & readability
  ┗ 📄 regexPractice.js → JavaScript logic for regex methods
 
-🚀 Features Covered
+<h2>🚀 Features Covered</h2>
+
 1️⃣ Sample Text
 
 User can type any text in a textarea.
@@ -2163,56 +2164,64 @@ y → Sticky
 ✅ Select one or more flags dynamically.
 
 3️⃣ Methods Practiced
+
 🔍 match()
 
 Finds matches based on a pattern.
 
-"Hello world".match(/hello/i);
-// Output: ["Hello"]
+    "Hello world".match(/hello/i);
+    
+    // Output: ["Hello"]
 
 🔍 matchAll()
 
 Finds all matches including groups.
 
-[..."abc123abc".matchAll(/abc/g)];
-// Output: [["abc"], ["abc"]]
+    [..."abc123abc".matchAll(/abc/g)];
+    
+    // Output: [["abc"], ["abc"]]
 
 ♻️ replace()
 
 Replaces matched text.
 
-"Hello world".replace(/world/, "Earth");
-// Output: "Hello Earth"
+    "Hello world".replace(/world/, "Earth");
+    
+    // Output: "Hello Earth"
 
 🔎 search()
 
 Returns index of first match.
 
-"Hello world".search(/world/);
-// Output: 6
+    "Hello world".search(/world/); 
+    
+    // Output: 6
 
 ✂️ split()
 
 Splits string by regex.
 
-"one,two,three".split(/,/);
-// Output: ["one", "two", "three"]
+    "one,two,three".split(/,/);
+    
+    // Output: ["one", "two", "three"]
 
 ✅ test()
 
 Returns true/false if match found.
 
-/\d+/.test("Age: 25");
-// Output: true
+    /\d+/.test("Age: 25");
+    
+    // Output: true
 
 ⚙️ exec()
 
 Returns detailed match object.
 
-/\d+/.exec("Age: 25");
-// Output: ["25"]
+    /\d+/.exec("Age: 25");
+    
+    // Output: ["25"]
 
-🎨 UI Demo
+<h2>🎨 UI Demo</h2>
 
 Each method has:
 
@@ -2224,11 +2233,7 @@ Each method has:
 
 📜 Result area → shows the output clearly
 
-📸 Screenshots
-
-(Add screenshots of your UI here – like you’ve been doing daily ✅)
-
-📚 Learning Goals
+<h2>📚 Learning Goals</h2>
 
 Understand RegExp methods in JavaScript
 
