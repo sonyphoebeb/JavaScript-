@@ -2149,17 +2149,17 @@ All regex methods will run on this input.
 
 2️⃣ Flags (🎌)
 
-g → Global
+   g → Global
 
-i → Ignore Case
+   i → Ignore Case
 
-m → Multiline
+   m → Multiline
 
-s → Dot All
+   s → Dot All
 
-u → Unicode
+   u → Unicode
 
-y → Sticky
+   y → Sticky
 
 ✅ Select one or more flags dynamically.
 
@@ -2225,21 +2225,21 @@ Returns detailed match object.
 
 Each method has:
 
-🏷️ Label → what the user should enter (match, replace, etc.)
+   🏷️ Label → what the user should enter (match, replace, etc.)
 
-⌨️ Input field → to enter regex pattern or replacement text
+   ⌨️ Input field → to enter regex pattern or replacement text
 
-🔘 Button → runs the method
+   🔘 Button → runs the method
 
-📜 Result area → shows the output clearly
+   📜 Result area → shows the output clearly
 
 <h2>📚 Learning Goals</h2>
 
-Understand RegExp methods in JavaScript
+   Understand RegExp methods in JavaScript
 
-Learn how to dynamically pass regex patterns
+   Learn how to dynamically pass regex patterns
 
-Practice flags and their impact on results
+   Practice flags and their impact on results
 
-Improve skills in HTML, CSS, and JS integration
+   Improve skills in HTML, CSS, and JS integration
 
