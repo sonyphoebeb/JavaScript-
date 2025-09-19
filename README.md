@@ -2128,6 +2128,113 @@ Example:
 
 <h2> 📅 Date: 19-09-2025  (Day 33) </h2> 
 
-# 🔁 JavaScript Loops Practice (Extended with CSS)
+# 🔎 JavaScript RegExp Practice
 
+This project demonstrates JavaScript Regular Expression (RegExp) methods with a dynamic UI.
+Each method has its own input field, label, and button, so even beginners can understand how to use it.
+
+📂 Project Structure
+📁 regex-practice
+ ┣ 📄 index.html   → Main UI with inputs, buttons & result sections
+ ┣ 📄 style.css    → Styling for layout & readability
+ ┗ 📄 regexPractice.js → JavaScript logic for regex methods
+
+🚀 Features Covered
+1️⃣ Sample Text
+
+User can type any text in a textarea.
+
+All regex methods will run on this input.
+
+2️⃣ Flags (🎌)
+
+g → Global
+
+i → Ignore Case
+
+m → Multiline
+
+s → Dot All
+
+u → Unicode
+
+y → Sticky
+
+✅ Select one or more flags dynamically.
+
+3️⃣ Methods Practiced
+🔍 match()
+
+Finds matches based on a pattern.
+
+"Hello world".match(/hello/i);
+// Output: ["Hello"]
+
+🔍 matchAll()
+
+Finds all matches including groups.
+
+[..."abc123abc".matchAll(/abc/g)];
+// Output: [["abc"], ["abc"]]
+
+♻️ replace()
+
+Replaces matched text.
+
+"Hello world".replace(/world/, "Earth");
+// Output: "Hello Earth"
+
+🔎 search()
+
+Returns index of first match.
+
+"Hello world".search(/world/);
+// Output: 6
+
+✂️ split()
+
+Splits string by regex.
+
+"one,two,three".split(/,/);
+// Output: ["one", "two", "three"]
+
+✅ test()
+
+Returns true/false if match found.
+
+/\d+/.test("Age: 25");
+// Output: true
+
+⚙️ exec()
+
+Returns detailed match object.
+
+/\d+/.exec("Age: 25");
+// Output: ["25"]
+
+🎨 UI Demo
+
+Each method has:
+
+🏷️ Label → what the user should enter (match, replace, etc.)
+
+⌨️ Input field → to enter regex pattern or replacement text
+
+🔘 Button → runs the method
+
+📜 Result area → shows the output clearly
+
+📸 Screenshots
+
+(Add screenshots of your UI here – like you’ve been doing daily ✅)
+
+📚 Learning Goals
+
+Understand RegExp methods in JavaScript
+
+Learn how to dynamically pass regex patterns
+
+Practice flags and their impact on results
+
+Improve skills in HTML, CSS, and JS integration
 
