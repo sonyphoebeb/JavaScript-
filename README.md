@@ -2328,3 +2328,10 @@ Pattern: \s
 
 Output: (space)
 
+
+📂 Project Structure
+📦 regex-meta-practice
+ ┣ 📜 index.html   → UI layout
+ ┣ 🎨 style.css    → Styling
+ ┣ ⚡ script.js    → Regex logic
+ ┗ 📷 screenshots  → Practice results
