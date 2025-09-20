@@ -2247,3 +2247,7 @@ Each method has:
 <h2> 📅 Date: 20-09-2025  (Day 34) </h2> 
 
 # 🔍 Regex Meta Characters Practice
+
+This project is a simple Regex Practice Tool built with HTML, CSS, and JavaScript.
+
+It allows you to test common Regex Meta Characters dynamically with input fields.
