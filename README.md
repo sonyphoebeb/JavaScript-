@@ -2261,3 +2261,22 @@ It allows you to test common Regex Meta Characters dynamically with input fields
 📜 See all matches highlighted in real time.
 
 🎨 Styled with basic CSS for clarity.
+
+📖 Meta Characters Covered
+✅ Character Classes
+
+[a] → Matches the character a
+
+[^a] → Matches anything except a
+
+[abc] → Matches a, b, or c
+
+[^abc] → Matches anything except a, b, or c
+
+[a-z] → Matches any lowercase letter
+
+[^a-z] → Matches anything except lowercase letters
+
+[0-9] → Matches digits 0 to 9
+
+[^0-9] → Matches non-digits
