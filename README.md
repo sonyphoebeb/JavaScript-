@@ -2252,7 +2252,7 @@ This project is a simple Regex Practice Tool built with HTML, CSS, and JavaScrip
 
 It allows you to test common Regex Meta Characters dynamically with input fields.
 
-🚀 Features
+<h2>🚀 Features</h2>
 
 ✍️ Enter your own sample text.
 
@@ -2262,8 +2262,9 @@ It allows you to test common Regex Meta Characters dynamically with input fields
 
 🎨 Styled with basic CSS for clarity.
 
-📖 Meta Characters Covered
-✅ Character Classes
+<h2>📖 Meta Characters Covered</h2>
+
+<h3>✅ Character Classes</h3>
 
 [a] → Matches the character a
 
@@ -2281,7 +2282,7 @@ It allows you to test common Regex Meta Characters dynamically with input fields
 
 [^0-9] → Matches non-digits
 
-✅ Meta Characters
+<h3>✅ Meta Characters</h3>
 
 \d → Matches digits
 
@@ -2302,46 +2303,50 @@ It allows you to test common Regex Meta Characters dynamically with input fields
 \uhhhh → Matches characters by unicode
 
 
-📝 Sample Input & Output
+<h3>📝 Sample Input & Output</h3>
 
-Example 1 – \d (Digits):
+   Example 1 – \d (Digits):
 
-Input: My phone is 9876
+    Input: My phone is 9876
 
-Pattern: \d
+    Pattern: \d
 
-Output: 9, 8, 7, 6
+    Output: 9, 8, 7, 6
 
 Example 2 – \w (Word Characters):
 
-Input: Hi_123!
+    Input: Hi_123!
 
-Pattern: \w
+    Pattern: \w
 
-Output: H, i, _, 1, 2, 3
+    Output: H, i, _, 1, 2, 3
 
 Example 3 – \s (Spaces):
 
-Input: I love coding
+    Input: I love coding
+ 
+    Pattern: \s
 
-Pattern: \s
-
-Output: (space)
+    Output: (space)
 
 
-📂 Project Structure
+<h2>📂 Project Structure</h2>
+
 📦 regex-meta-practice
+
  ┣ 📜 index.html   → UI layout
+ 
  ┣ 🎨 style.css    → Styling
+ 
  ┣ ⚡ script.js    → Regex logic
- ┗ 📷 screenshots  → Practice results
+ 
 
- 💡 How to Use
+ <h2>💡 How to Use</h2>
 
-Clone or download this repo.
+-> Clone or download this repo.
 
-Open index.html in your browser.
+-> Open index.html in your browser.
 
-Type sample text and select regex pattern.
+-> Type sample text and select regex pattern.
 
-Matches will be displayed instantly.
+-> Matches will be displayed instantly.
