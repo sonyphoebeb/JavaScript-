@@ -2335,3 +2335,13 @@ Output: (space)
  ┣ 🎨 style.css    → Styling
  ┣ ⚡ script.js    → Regex logic
  ┗ 📷 screenshots  → Practice results
+
+ 💡 How to Use
+
+Clone or download this repo.
+
+Open index.html in your browser.
+
+Type sample text and select regex pattern.
+
+Matches will be displayed instantly.
