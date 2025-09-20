@@ -2302,3 +2302,29 @@ It allows you to test common Regex Meta Characters dynamically with input fields
 \uhhhh → Matches characters by unicode
 
 
+📝 Sample Input & Output
+
+Example 1 – \d (Digits):
+
+Input: My phone is 9876
+
+Pattern: \d
+
+Output: 9, 8, 7, 6
+
+Example 2 – \w (Word Characters):
+
+Input: Hi_123!
+
+Pattern: \w
+
+Output: H, i, _, 1, 2, 3
+
+Example 3 – \s (Spaces):
+
+Input: I love coding
+
+Pattern: \s
+
+Output: (space)
+
