@@ -2251,3 +2251,13 @@ Each method has:
 This project is a simple Regex Practice Tool built with HTML, CSS, and JavaScript.
 
 It allows you to test common Regex Meta Characters dynamically with input fields.
+
+🚀 Features
+
+✍️ Enter your own sample text.
+
+🎯 Select which Regex Meta Character to test.
+
+📜 See all matches highlighted in real time.
+
+🎨 Styled with basic CSS for clarity.
