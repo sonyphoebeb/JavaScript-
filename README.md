@@ -2280,3 +2280,25 @@ It allows you to test common Regex Meta Characters dynamically with input fields
 [0-9] → Matches digits 0 to 9
 
 [^0-9] → Matches non-digits
+
+✅ Meta Characters
+
+\d → Matches digits
+
+\D → Matches non-digits
+
+\w → Matches word characters (letters, numbers, underscore)
+
+\W → Matches non-word characters
+
+\s → Matches whitespace (spaces, tabs, newlines)
+
+\S → Matches non-whitespace
+
+\ddd → Matches characters by octal number
+
+\xhh → Matches characters by hex number
+
+\uhhhh → Matches characters by unicode
+
+
