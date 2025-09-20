@@ -2307,19 +2307,19 @@ It allows you to test common Regex Meta Characters dynamically with input fields
 
    Example 1 – \d (Digits):
 
-    Input: My phone is 9876
+    Input: JavaScript is introduced in 1995 
 
     Pattern: \d
 
-    Output: 9, 8, 7, 6
+    Output: 1, 9, 9, 5
 
 Example 2 – \w (Word Characters):
 
-    Input: Hi_123!
+    Input: Hey_123!
 
     Pattern: \w
 
-    Output: H, i, _, 1, 2, 3
+    Output: H, e, y, _, 1, 2, 3
 
 Example 3 – \s (Spaces):
 
