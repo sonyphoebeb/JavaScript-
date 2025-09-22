@@ -2356,7 +2356,74 @@ Example 3 – \s (Spaces):
 
 # 🔍 Regex Assertions Practice
 
+This project is a practice playground for testing different JavaScript Regular Expression (Regex) syntaxes with simple UI.
+It helps you learn and debug how each regex behaves with dynamic input.
 
+📂 Project Structure
+/regex-practice
+ ├── index.html   # Main HTML file
+ ├── style.css    # Styling for layout and output
+ ├── script.js    # JavaScript logic for regex testing
+ └── README.md    # Documentation
+
+✨ Features
+
+📌 Dropdown list of common regex syntax (^, $, \b, \B, lookahead, lookbehind, etc.)
+
+📥 Auto-fills sample input for each regex option.
+
+🖊️ Allows custom input text to test your own strings.
+
+🔄 Auto-run toggle to test automatically on dropdown/input change.
+
+🛠️ Debug output shows:
+
+Raw regex pattern
+
+Actual RegExp object used
+
+Input string with hidden characters (space, tab, BOM) highlighted
+
+Results from .test() and .match()
+
+⚠️ Warns about browser support issues (e.g., lookbehind not supported in older browsers).
+
+🧑‍💻 How to Use
+
+Open index.html in your browser.
+
+Select a regex syntax from the dropdown.
+
+Click Use Sample to auto-fill a relevant example string.
+
+Press Test Regex (or enable Auto-run).
+
+See matches and debugging info in the output box.
+
+📖 Example
+Regex:
+^A
+
+Input:
+Apple is tasty
+
+Output:
+Pattern (raw): ^A
+RegExp used: /^A/g
+
+Input (raw): "Apple is tasty"
+Leading chars: A(U+0041) | p(U+0070) | p(U+0070) | l(U+006C) | e(U+0065) |  (U+0020)
+
+test() => true
+match() => A
+
+🚀 Future Enhancements
+
+Add more regex categories (quantifiers, groups, alternation).
+
+Highlight matches directly inside the input text.
+
+Dark/light theme toggle.
 
 
 
