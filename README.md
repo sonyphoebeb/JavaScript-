@@ -2422,7 +2422,7 @@ Leading chars: A(U+0041) | p(U+0070) | p(U+0070) | l(U+006C) | e(U+0065) |  (U+0
 test() => true
 match() => A
 
-🚀 Future Enhancements
+<h2>🚀 Future Enhancements</h2>
 
 Add more regex categories (quantifiers, groups, alternation).
 
