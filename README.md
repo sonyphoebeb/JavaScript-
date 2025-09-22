@@ -2371,7 +2371,7 @@ It helps you learn and debug how each regex behaves with dynamic input.
  
  └── README.md    # Documentation
 
-✨ Features
+<h2>✨ Features</h2>
 
 📌 Dropdown list of common regex syntax (^, $, \b, \B, lookahead, lookbehind, etc.)
 
