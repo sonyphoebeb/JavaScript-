@@ -2350,3 +2350,19 @@ Example 3 – \s (Spaces):
 -> Type sample text and select regex pattern.
 
 -> Matches will be displayed instantly.
+
+
+<h2> 📅 Date: 22-09-2025  (Day 36) </h2> 
+
+# 🔍 Regex Assertions Practice
+
+
+
+
+
+
+
+
+
+
+
