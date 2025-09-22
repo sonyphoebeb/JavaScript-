@@ -2360,10 +2360,15 @@ This project is a practice playground for testing different JavaScript Regular E
 It helps you learn and debug how each regex behaves with dynamic input.
 
 📂 Project Structure
+
 /regex-practice
+
  ├── index.html   # Main HTML file
+ 
  ├── style.css    # Styling for layout and output
+ 
  ├── script.js    # JavaScript logic for regex testing
+ 
  └── README.md    # Documentation
 
 ✨ Features
