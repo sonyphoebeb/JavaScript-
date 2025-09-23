@@ -2440,6 +2440,64 @@ It helps you learn and debug how each regex behaves with dynamic input.
 
 # 🔢 Regex Quantifiers Practice
 
+This project is a practice tool to understand and experiment with JavaScript Regular Expression Flags & Quantifiers.
+It includes HTML, CSS, and JavaScript in separate files for clean structure.
+
+📂 Project Structure
+📦 regex-practice
+ ┣ 📜 index.html   # Main HTML file
+ ┣ 📜 style.css    # Styling
+ ┣ 📜 script.js    # JavaScript logic
+ ┗ 📜 README.md    # Documentation
+
+🚀 Features
+
+Input any text and test regex flags & quantifiers dynamically
+
+Buttons for all major RegExp Flags (g, i, m, s, u, v, y, d)
+
+Buttons for common Quantifiers (+, *, ?, {n}, {n,m}, {n,})
+
+Displays the pattern, input, match result, and an explanation
+
+Clean and simple UI built with CSS
+
+⚡ Regex Flags Reference
+Flag	Description
+g	Global search → finds all matches instead of stopping at the first
+i	Case-insensitive search
+m	Multiline search → ^ and $ match at line breaks
+s	DotAll → . also matches newline characters
+u	Unicode support
+v	Unicode v (new in 2025) → enhanced Unicode handling
+y	Sticky search → matches only from lastIndex
+d	Indices (new in 2022) → captures start & end positions
+🔢 Quantifiers Reference
+Quantifier	Description
+X+	Matches one or more occurrences of X
+X*	Matches zero or more occurrences of X
+X?	Matches zero or one occurrence of X
+X{n}	Matches exactly n occurrences of X
+X{n,m}	Matches between n and m occurrences of X
+X{n,}	Matches at least n occurrences of X
+🖼️ Screenshot
+
+Add your daily screenshot here (you mentioned you update them in Git).
+
+🛠️ How to Use
+
+Clone the repo
+
+git clone https://github.com/your-username/regex-practice.git
+cd regex-practice
+
+
+Open index.html in your browser
+
+Type some text in the input box
+
+Try different flags and quantifiers using the provided buttons
+
 
 
 
