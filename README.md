@@ -2470,41 +2470,41 @@ It includes HTML, CSS, and JavaScript in separate files for clean structure.
 
 <h3>⚡Regex Flag Description</h3>
 
-g	Global search → finds all matches instead of stopping at the first
+    g	Global search → finds all matches instead of stopping at the first
 
-i	Case-insensitive search
+    i	Case-insensitive search
 
-m	Multiline search → ^ and $ match at line breaks
+    m	Multiline search → ^ and $ match at line breaks
 
-s	DotAll → . also matches newline characters
+    s	DotAll → . also matches newline characters
 
-u	Unicode support
+    u	Unicode support
 
-v	Unicode v (new in 2025) → enhanced Unicode handling
+    v	Unicode v (new in 2025) → enhanced Unicode handling
 
-y	Sticky search → matches only from lastIndex
+    y	Sticky search → matches only from lastIndex
 
-d	Indices (new in 2022) → captures start & end positions
+    d	Indices (new in 2022) → captures start & end positions
 
 <h3>🔢 Regex Quantifiers Description</h3>
 	
-X+	Matches one or more occurrences of X
+    X+	Matches one or more occurrences of X
 
-X*	Matches zero or more occurrences of X
+    X*	Matches zero or more occurrences of X
 
-X?	Matches zero or one occurrence of X
+    X?	Matches zero or one occurrence of X
 
-X{n}	Matches exactly n occurrences of X
+    X{n}	Matches exactly n occurrences of X
 
-X{n,m}	Matches between n and m occurrences of X
+    X{n,m}	Matches between n and m occurrences of X
 
-X{n,}	Matches at least n occurrences of X
+    X{n,}	Matches at least n occurrences of X
 
 <h2>🛠️ How to Use</h2>
 
 1. Clone the repo
 
-       git clone (https://github.com/sonyphoebeb/BasicFullStackIntroduction/commit/f046190dca41ea18cfa9fac5a8e0d3b0f2a38438)/n
+       git clone (https://github.com/sonyphoebeb/BasicFullStackIntroduction/commit/f046190dca41ea18cfa9fac5a8e0d3b0f2a38438)
        cd regex-practice
 
 2. Open index.html in your browser
