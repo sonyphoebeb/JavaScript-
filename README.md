@@ -2468,42 +2468,50 @@ It includes HTML, CSS, and JavaScript in separate files for clean structure.
 
 5. Clean and simple UI built with CSS
 
-<h2>⚡ Regex Flags Reference</h2>
-
-Flag	Description
+<h3>⚡Regex Flag Description</h3>
 
 g	Global search → finds all matches instead of stopping at the first
+
 i	Case-insensitive search
+
 m	Multiline search → ^ and $ match at line breaks
+
 s	DotAll → . also matches newline characters
+
 u	Unicode support
+
 v	Unicode v (new in 2025) → enhanced Unicode handling
+
 y	Sticky search → matches only from lastIndex
+
 d	Indices (new in 2022) → captures start & end positions
 
-🔢 Quantifiers Reference
-
-Quantifier	Description
+<h3>🔢 Regex Quantifiers Description</h3>
+	
 X+	Matches one or more occurrences of X
+
 X*	Matches zero or more occurrences of X
+
 X?	Matches zero or one occurrence of X
+
 X{n}	Matches exactly n occurrences of X
+
 X{n,m}	Matches between n and m occurrences of X
+
 X{n,}	Matches at least n occurrences of X
 
 <h2>🛠️ How to Use</h2>
 
-Clone the repo
+1. Clone the repo
 
-git clone https://github.com/your-username/regex-practice.git
-cd regex-practice
+       git clone (https://github.com/sonyphoebeb/BasicFullStackIntroduction/commit/f046190dca41ea18cfa9fac5a8e0d3b0f2a38438)/n
+       cd regex-practice
 
+2. Open index.html in your browser
 
-Open index.html in your browser
+3. Type some text in the input box
 
-Type some text in the input box
-
-Try different flags and quantifiers using the provided buttons
+4. Try different flags and quantifiers using the provided buttons
 
 
 
