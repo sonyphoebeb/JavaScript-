@@ -2445,10 +2445,15 @@ This project is a practice tool to understand and experiment with JavaScript Reg
 It includes HTML, CSS, and JavaScript in separate files for clean structure.
 
 📂 Project Structure
+
 📦 regex-practice
+
  ┣ 📜 index.html   # Main HTML file
+ 
  ┣ 📜 style.css    # Styling
+ 
  ┣ 📜 script.js    # JavaScript logic
+ 
  ┗ 📜 README.md    # Documentation
 
 🚀 Features
