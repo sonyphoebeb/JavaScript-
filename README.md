@@ -2244,6 +2244,7 @@ Each method has:
    Improve skills in HTML, CSS, and JS integration
 
 
+
 <h2> 📅 Date: 20-09-2025  (Day 34) </h2> 
 
 # 🔍 Regex Meta Characters Practice
@@ -2352,6 +2353,8 @@ Example 3 – \s (Spaces):
 -> Matches will be displayed instantly.
 
 
+
+
 <h2> 📅 Date: 22-09-2025  (Day 36) </h2> 
 
 # 🔍 Regex Assertions Practice
@@ -2433,7 +2436,9 @@ It helps you learn and debug how each regex behaves with dynamic input.
 
 
 
+<h2> 📅 Date: 23-09-2025  (Day 37) </h2> 
 
+# 🔢 Regex Quantifiers Practice
 
 
 
