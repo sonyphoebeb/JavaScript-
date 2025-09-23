@@ -2438,9 +2438,10 @@ It helps you learn and debug how each regex behaves with dynamic input.
 
 <h2> 📅 Date: 23-09-2025  (Day 37) </h2> 
 
-# 🔢 Regex Quantifiers Practice
+# 🔢 Regex Quantifiers and Flags Practice
 
 This project is a practice tool to understand and experiment with JavaScript Regular Expression Flags & Quantifiers.
+
 It includes HTML, CSS, and JavaScript in separate files for clean structure.
 
 📂 Project Structure
