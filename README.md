@@ -2540,32 +2540,32 @@ Understand how Sets only store unique values.
 
 📌 Example:
 
-const numbers = new Set([1, 2, 3, 3, 4]);
-console.log(numbers); // Output: {1, 2, 3, 4}
+     const numbers = new Set([1, 2, 3, 3, 4]);
+     console.log(numbers); // Output: {1, 2, 3, 4}
 
-2️⃣ Set Methods Page (set-methods/)
+<h2>2️⃣ Set Methods Page (set-methods/)</h2>
 
 Covers all important Set methods and properties with interactive buttons.
 
 🔹 Methods
 
-new Set() → Create a new set
+1. new Set() → Create a new set
 
-add() → Add a value
+2. add() → Add a value
 
-delete() → Remove a value
+3. delete() → Remove a value
 
-clear() → Remove all values
+4. clear() → Remove all values
 
-entries() → Get [value, value] pairs
+5. entries() → Get [value, value] pairs
 
-forEach() → Loop through values
+6. forEach() → Loop through values
 
-has() → Check if a value exists
+7. has() → Check if a value exists
 
-keys() → Same as values()
+8. keys() → Same as values()
 
-values() → Return all values
+9. values() → Return all values
 
 🔹 Property
 
