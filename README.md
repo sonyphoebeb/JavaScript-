@@ -2573,26 +2573,19 @@ Covers all important Set methods and properties with interactive buttons.
 
 <h2>🎨 UI Features</h2>
 
-Clean HTML + CSS + JS setup
+-> Clean HTML + CSS + JS setup
 
-Buttons arranged side by side for easy testing
+-> Buttons arranged side by side for easy testing
 
-Each button dynamically shows output
+-> Each button dynamically shows output
 
 <h2>🚀 How to Run</h2>
 
-Clone the repo
+-> Clone the repo
 
-Open any index.html in your browser
+-> Open any index.html in your browser
 
-Click the buttons to test the examples
+-> Click the buttons to test the examples
 
-📸 Screenshots
-
-I’m adding daily screenshots of my practice to track progress.
-
-📧 Logs
-
-All topics covered so far are being documented & committed here regularly.
 
 
