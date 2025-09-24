@@ -2521,14 +2521,18 @@ It includes HTML, CSS, and JavaScript in separate files for clean structure.
 # 🌱 JavaScript Sets Practice
 
 This repository contains my JavaScript Sets practice work.
+
 I created separate pages to learn and explore how Sets work in JavaScript.
 
 📂 Project Structure
+
 /set-intro         → Basic Set creation & uniqueness
+
 /set-methods       → All Set methods & properties with examples
+
 README.md
 
-1️⃣ Set Intro Page (set-intro/)
+<h2>1️⃣ Set Intro Page (set-intro/)</h2>
 
 Learn how to create a Set.
 
