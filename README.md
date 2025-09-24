@@ -2518,6 +2518,77 @@ It includes HTML, CSS, and JavaScript in separate files for clean structure.
 
 <h2> 📅 Date: 24-09-2025  (Day 38) </h2> 
 
-# 🔢 Regex Quantifiers and Flags Practice
+# 🌱 JavaScript Sets Practice
+
+This repository contains my JavaScript Sets practice work.
+I created separate pages to learn and explore how Sets work in JavaScript.
+
+📂 Project Structure
+/set-intro         → Basic Set creation & uniqueness
+/set-methods       → All Set methods & properties with examples
+README.md
+
+1️⃣ Set Intro Page (set-intro/)
+
+Learn how to create a Set.
+
+Understand how Sets only store unique values.
+
+📌 Example:
+
+const numbers = new Set([1, 2, 3, 3, 4]);
+console.log(numbers); // Output: {1, 2, 3, 4}
+
+2️⃣ Set Methods Page (set-methods/)
+
+Covers all important Set methods and properties with interactive buttons.
+
+🔹 Methods
+
+new Set() → Create a new set
+
+add() → Add a value
+
+delete() → Remove a value
+
+clear() → Remove all values
+
+entries() → Get [value, value] pairs
+
+forEach() → Loop through values
+
+has() → Check if a value exists
+
+keys() → Same as values()
+
+values() → Return all values
+
+🔹 Property
+
+size → Returns the number of values in a set
+
+🎨 UI Features
+
+Clean HTML + CSS + JS setup
+
+Buttons arranged side by side for easy testing
+
+Each button dynamically shows output
+
+🚀 How to Run
+
+Clone the repo
+
+Open any index.html in your browser
+
+Click the buttons to test the examples
+
+📸 Screenshots
+
+I’m adding daily screenshots of my practice to track progress.
+
+📧 Logs
+
+All topics covered so far are being documented & committed here regularly.
 
 
