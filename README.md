@@ -2569,9 +2569,9 @@ Covers all important Set methods and properties with interactive buttons.
 
 🔹 Property
 
-size → Returns the number of values in a set
+10. size → Returns the number of values in a set
 
-🎨 UI Features
+<h2>🎨 UI Features</h2>
 
 Clean HTML + CSS + JS setup
 
@@ -2579,7 +2579,7 @@ Buttons arranged side by side for easy testing
 
 Each button dynamically shows output
 
-🚀 How to Run
+<h2>🚀 How to Run</h2>
 
 Clone the repo
 
