@@ -2591,4 +2591,71 @@ Covers all important Set methods and properties with interactive buttons.
 
 <h2> 📅 Date: 25-09-2025  (Day 39) </h2> 
 
-# 🌱 JavaScript Sets Practice
+# avaScript Set Logic Methods & WeakSet Practice
+📌 1. Set Logic Methods (✅ New in JavaScript 2025)
+
+In ES2025, 7 new logical methods were added to the Set object for performing mathematical operations.
+
+🚀 Practiced Methods:
+
+union() → Combines elements from two sets.
+
+difference() → Elements present in first set but not in second.
+
+intersection() → Common elements between two sets.
+
+isDisjointFrom() → Checks if two sets have no elements in common.
+
+isSubsetOf() → Checks if all elements of one set exist in another.
+
+isSupersetOf() → Checks if a set contains all elements of another.
+
+symmetricDifference() → Elements present in one set but not in both.
+
+💻 Example:
+let setA = new Set([1, 2, 3]);
+let setB = new Set([3, 4, 5]);
+
+console.log(setA.union(setB));         // {1, 2, 3, 4, 5}
+console.log(setA.intersection(setB));  // {3}
+console.log(setA.difference(setB));    // {1, 2}
+console.log(setA.symmetricDifference(setB)); // {1, 2, 4, 5}
+
+
+📷 Screenshots included in repo
+
+📌 2. WeakSet Practice
+
+A WeakSet is similar to a Set, but it can only store objects (not primitive values). Objects inside a WeakSet are held weakly, meaning they can be garbage collected if no other reference exists.
+
+🚀 Practiced Methods:
+
+add(obj) → Adds an object to WeakSet.
+
+has(obj) → Checks if object exists in WeakSet.
+
+delete(obj) → Removes object from WeakSet.
+
+⚡ Note: WeakSet cannot be iterated (no forEach, no size).
+
+💻 Example:
+let weakSet = new WeakSet();
+
+let obj1 = { name: "Sony" };
+let obj2 = { name: "Trainer" };
+
+weakSet.add(obj1);
+weakSet.add(obj2);
+
+console.log(weakSet.has(obj1)); // true
+weakSet.delete(obj2);
+console.log(weakSet.has(obj2)); // false
+
+
+📷 Screenshots included in repo
+
+🎯 Summary
+
+✔ Learned Set Logic Methods (ES2025) for performing mathematical set operations.
+✔ Practiced WeakSet methods (add, has, delete) and understood why WeakSets cannot be iterated.
+✔ Added interactive HTML + CSS + JS buttons for practical learning.
