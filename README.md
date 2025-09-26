@@ -2653,3 +2653,112 @@ A WeakSet is similar to a Set, but it can only store objects (not primitive valu
 ✔ Practiced WeakSet methods (add, has, delete) and understood why WeakSets cannot be iterated.
 
 ✔ Added interactive HTML + CSS + JS buttons for practical learning.
+
+
+
+<h2> 📅 Date: 26-09-2025  (Day 40) </h2> 
+
+#🗺️ JavaScript Maps & WeakMaps Practice
+
+This project demonstrates JavaScript Maps, Map Methods, and WeakMaps with examples using HTML, CSS, and JavaScript.
+
+📘 Topics Covered
+🔹 JavaScript Maps
+
+new Map() → Create a new Map.
+
+set(key, value) → Add key-value pairs.
+
+get(key) → Retrieve a value by key.
+
+size → Get the total number of entries.
+
+delete(key) → Remove a specific entry.
+
+clear() → Remove all entries.
+
+has(key) → Check if a key exists.
+
+forEach() → Loop through all key-value pairs.
+
+entries() → Get all [key, value] pairs.
+
+keys() → Get all keys.
+
+values() → Get all values.
+
+Objects as Keys → Maps allow objects to be keys (unlike plain objects).
+
+Map.groupBy() → New method (2025) for grouping data.
+
+🔹 JavaScript WeakMap
+
+new WeakMap() → Create a WeakMap.
+
+set(key, value) → Add key-value pairs (keys must be objects).
+
+get(key) → Get the value for a key.
+
+has(key) → Check if a key exists.
+
+delete(key) → Remove a key-value pair.
+
+⚠️ WeakMap differences:
+
+Keys must be objects (not primitives).
+
+Keys are weakly referenced, so they can be garbage collected.
+
+Not iterable → You cannot loop through keys/values like in Map.
+
+📂 Files
+index.html
+
+Buttons for performing Map and WeakMap operations.
+
+Separate output sections for each operation.
+
+style.css
+
+Styles buttons, results, and layouts neatly.
+
+Side-by-side button design for better UI.
+
+script.js
+
+Implements all Map methods.
+
+Demonstrates object keys and Map.groupBy().
+
+Implements WeakMap methods with prompts for dynamic input.
+
+🖥️ Example Workflows
+✅ Map Example
+let myMap = new Map();
+myMap.set("name", "Sony");
+myMap.set("role", "Developer");
+
+console.log(myMap.get("name")); // Sony
+console.log(myMap.size); // 2
+
+✅ WeakMap Example
+let weakMap = new WeakMap();
+let obj = {};
+
+weakMap.set(obj, "Private Data");
+console.log(weakMap.get(obj)); // Private Data
+console.log(weakMap.has(obj)); // true
+
+📸 Screenshots
+
+(Add practice screenshots here for each topic – Maps, Map Methods, WeakMap)
+
+🚀 How to Run
+
+Open index.html in your browser.
+
+Click the buttons to test Map and WeakMap methods.
+
+Results will display dynamically in the output section.
+
+✅ This practice will help you clearly understand Maps vs WeakMaps and their differences.
