@@ -2716,23 +2716,23 @@ Not iterable → You cannot loop through keys/values like in Map.
 
 1. index.html
 
-Buttons for performing Map and WeakMap operations.
+       Buttons for performing Map and WeakMap operations.
 
-Separate output sections for each operation.
+       Separate output sections for each operation.
 
 2. style.css
 
-Styles buttons, results, and layouts neatly.
+       Styles buttons, results, and layouts neatly.
 
-Side-by-side button design for better UI.
+       Side-by-side button design for better UI.
 
 3. script.js
 
-Implements all Map methods.
+       Implements all Map methods.
 
-Demonstrates object keys and Map.groupBy().
+       Demonstrates object keys and Map.groupBy().
 
-Implements WeakMap methods with prompts for dynamic input.
+       Implements WeakMap methods with prompts for dynamic input.
 
 <h2>🖥️ Example Workflows</h2>
 
@@ -2754,7 +2754,7 @@ Implements WeakMap methods with prompts for dynamic input.
     console.log(weakMap.get(obj)); // Private Data
     console.log(weakMap.has(obj)); // true
 
-<h2></h2>🚀 How to Run
+<h2>🚀 How to Run</h2>
 
 -> Open index.html in your browser.
 
